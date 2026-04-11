@@ -27,10 +27,12 @@ jobs:
       - name: Check for replies
         env:
           SENDING_EMAIL: ${{ secrets.SENDING_EMAIL }}
+          SENDING_NAME: ${{ secrets.SENDING_NAME }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           EMAILOCTOPUS_API_KEY: ${{ secrets.EMAILOCTOPUS_API_KEY }}
           EMAILOCTOPUS_LIST_ID: ${{ secrets.EMAILOCTOPUS_LIST_ID }}
           USE_SMTP: '1'
+          AUTO_SEND_REPLIES: ${{ secrets.AUTO_SEND_REPLIES }}
           LOG_LEVEL: INFO
         run: python scripts/monitor_responses.py --once
 
