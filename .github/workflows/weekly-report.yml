@@ -1,0 +1,38 @@
+name: Weekly Report
+
+on:
+  schedule:
+    - cron: '0 20 * * 0'   # Sunday 20:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate weekly report
+        env:
+          LOG_LEVEL: INFO
+        run: python scripts/generate_report.py
+
+      - name: Commit report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add 05-reports/ 06-validated/
+          git diff --staged --quiet || git commit -m "chore: weekly validation report [skip ci]"
+          git push

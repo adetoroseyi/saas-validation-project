@@ -1,0 +1,9 @@
+{
+  "metadata": {
+    "created": "2026-04-10",
+    "schema_version": "1.0",
+    "count": 0,
+    "note": "Any email in this list is PERMANENTLY excluded from all sending. Added via unsubscribe requests, hard bounces, or manual flag. Never remove entries from this list."
+  },
+  "suppressed": []
+}

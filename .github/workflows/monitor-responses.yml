@@ -1,0 +1,44 @@
+name: Monitor Responses
+
+on:
+  schedule:
+    - cron: '0 */2 * * 1-5'   # Every 2 hours, Monday–Friday
+  workflow_dispatch: {}
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check for replies
+        env:
+          SENDING_EMAIL: ${{ secrets.SENDING_EMAIL }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAILOCTOPUS_API_KEY: ${{ secrets.EMAILOCTOPUS_API_KEY }}
+          EMAILOCTOPUS_LIST_ID: ${{ secrets.EMAILOCTOPUS_LIST_ID }}
+          USE_SMTP: '1'
+          LOG_LEVEL: INFO
+        run: python scripts/monitor_responses.py --once
+
+      - name: Commit response data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add 04-responses/responses.json 02-leads/leads.json \
+                  02-leads/suppression_list.json 07-launch-list/launch_contacts.json
+          git diff --staged --quiet || git commit -m "chore: monitor responses [skip ci]"
+          git push

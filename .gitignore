@@ -1,0 +1,22 @@
+# Environment variables — NEVER commit
+.env
+.env.*
+
+# Gmail OAuth tokens — NEVER commit
+scripts/credentials.json
+scripts/token.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

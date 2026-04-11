@@ -1,0 +1,58 @@
+name: Source Leads
+
+on:
+  schedule:
+    - cron: '0 7 * * 1-5'   # 07:00 UTC Monday–Friday
+  workflow_dispatch:
+    inputs:
+      max_per_query:
+        description: 'Max leads per search query'
+        required: false
+        default: '20'
+
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run source_leads.py
+        env:
+          APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          HUNTER_API_KEY: ${{ secrets.HUNTER_API_KEY }}
+          COMPANIES_HOUSE_API_KEY: ${{ secrets.COMPANIES_HOUSE_API_KEY }}
+          APOLLO_API_KEY: ${{ secrets.APOLLO_API_KEY }}
+          EMAILOCTOPUS_API_KEY: ${{ secrets.EMAILOCTOPUS_API_KEY }}
+          EMAILOCTOPUS_LIST_ID: ${{ secrets.EMAILOCTOPUS_LIST_ID }}
+          LOG_LEVEL: INFO
+        run: |
+          python scripts/source_leads.py \
+            --max-per-query ${{ github.event.inputs.max_per_query || '20' }}
+
+      - name: Run source_companies_house.py
+        env:
+          COMPANIES_HOUSE_API_KEY: ${{ secrets.COMPANIES_HOUSE_API_KEY }}
+          HUNTER_API_KEY: ${{ secrets.HUNTER_API_KEY }}
+        run: python scripts/source_companies_house.py --limit 30
+        continue-on-error: true
+
+      - name: Commit updated leads
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add 02-leads/leads.json
+          git diff --staged --quiet || git commit -m "chore: source leads [skip ci]"
+          git push

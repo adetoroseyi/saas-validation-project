@@ -1,0 +1,10 @@
+{
+  "metadata": {
+    "created": "2026-04-11",
+    "project": "T&O Ventures SaaS Validation",
+    "description": "Master launch list. Every contact reached during validation is saved here automatically when Email 1 is sent. Enriched with response data when they reply. Ready for product launch outreach - do not contact anyone where do_not_contact is true.",
+    "total_contacts": 0,
+    "last_updated": null
+  },
+  "contacts": []
+}

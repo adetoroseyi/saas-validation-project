@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "created": "2026-04-10",
+    "schema_version": "1.0",
+    "total_responses": 0,
+    "classifications": {
+      "interested": 0,
+      "pricing_question": 0,
+      "not_interested": 0,
+      "unsubscribe": 0,
+      "auto_reply": 0,
+      "question": 0
+    }
+  },
+  "responses": []
+}
