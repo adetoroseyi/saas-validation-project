@@ -49,6 +49,13 @@ jobs:
         run: python scripts/source_companies_house.py --limit 30
         continue-on-error: true
 
+      - name: Run source_pdl.py (US leads)
+        env:
+          PDL_API_KEY: ${{ secrets.PDL_API_KEY }}
+          LOG_LEVEL: INFO
+        run: python scripts/source_pdl.py --per-profile 25
+        continue-on-error: true
+
       - name: Commit updated leads
         run: |
           git config user.name "github-actions[bot]"
