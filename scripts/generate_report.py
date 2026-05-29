@@ -156,8 +156,7 @@ def geo_breakdown(leads, responses, start, end) -> list[dict[str, Any]]:
 def check_validation(metrics: dict[str, dict[str, Any]]) -> list[str]:
     winners = []
     for concept, m in metrics.items():
-        # These are weekly counts; cumulative validation would use all-time.
-        # For v1 we check weekly — extend to cumulative when data exists.
+        # All-time cumulative counts — caller passes all_time_metrics, not weekly.
         interested = m["interested"]
         pricing_signals = len(m["pricing_signals"])
         feat_counts = Counter(m["feature_requests"])
@@ -296,8 +295,11 @@ def main() -> int:
     }
 
     metrics = compute_concept_metrics(leads, sends, responses, start, end)
+    # Validation checks use all-time cumulative data, not just this week
+    all_time_start = date(2020, 1, 1)
+    all_time_metrics = compute_concept_metrics(leads, sends, responses, all_time_start, end)
     geo = geo_breakdown(leads, responses, start, end)
-    winners = check_validation(metrics)
+    winners = check_validation(all_time_metrics)
 
     report = render_report(wk, start, end, totals, metrics, geo, winners)
 
