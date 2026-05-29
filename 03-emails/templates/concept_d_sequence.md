@@ -1,106 +1,101 @@
-# Concept D — ProcessFlow — Email Sequence
+﻿# Concept D — ProcessFlow — Email Sequence
 
 **Concept:** ProcessFlow
 **One-liner:** Turn your messy business processes into automated workflows without developers.
 **Sender:** Sheyi A <sheyi@trysignalbench.com>
-**Sequence:** 3 touches over 7 days
-**Footer (every email):** "Reply 'stop' to opt out."
+**Sequence:** 4 touches over 10 days
 
 ---
 
-## Email 1 — Day 0 — The Question
+## Subject Line Variants
 
-**Subject line variants (rotate, A/B test):**
-1. manual process question
-2. still doing this manually?
-3. how much time does {{company_name}} spend on repeat tasks
+**Email 1 (rotate, A/B test):**
+1. `still doing this manually?`
+2. `the 20-minute task`
+3. `{{company_name}} ops question` — fallback if company_name missing: `an ops question`
 
-**Body:**
+**Emails 2–4:** `Re: {{original_subject}}`
+
+---
+
+## Email 1 — Day 0
 
 ```
 Hi {{first_name}},
 
-There's a point in most growing businesses where the processes work — but only because someone is manually holding them together.
+There's a point in most growing businesses where a process works — but only because one person is manually holding it together.
 
-It's usually not one big broken thing. It's five small ones that each eat 20 minutes a day and nobody's ever sat down to fix.
+It's usually not one big broken thing. It's a few small ones that each eat 20 minutes a day, and nobody's fixed them because the workaround technically works.
 
-Does {{company_name}} have a process like that — something in onboarding, invoicing, or client handoffs that still runs on human effort because the right tool doesn't quite exist yet?
+Does {{company_name}} have something like that — in onboarding, invoicing, or client handoffs?
 
-Early research — genuinely as interested in a 'no' as a 'yes.'
-
-Cheers,
-Sheyi
-Founder, T&O Ventures
-Sent from my phone
-
-Reply 'stop' to opt out.
-```
-
----
-
-## Email 2 — Day 3 — The Follow-up (only if no reply)
-
-**Subject line:** `Re: {{original_subject}}`
-
-**Body:**
-
-```
-Hi {{first_name}},
-
-To be more specific about what I'm looking into: I'm curious whether {{company_name}} is losing more than five hours a week to tasks that should be automated but aren't.
-
-I grabbed 10 minutes with a logistics firm recently — they're manually copy-pasting from their CRM into a Sage invoice every single afternoon. Same data, three systems, every day. That was their answer to my question. They'd never actually added up how long it was taking before I asked.
-
-If that kind of thing isn't happening at {{company_name}}, no need to reply. But if it is — which specific task would you automate first if you could?
-
-Cheers,
-Sheyi
-
-Reply 'stop' to opt out.
-```
-
----
-
-## Email 3 — Day 7 — The Breakup (only if no reply)
-
-**Subject line:** `Re: {{original_subject}}`
-
-**Body:**
-
-```
-Hi {{first_name}},
-
-Last email from me — I won't keep at it.
-
-I'm trying to decide whether to kill this project or commit to it. The honest input from people actually running operations at businesses like {{company_name}} has been worth more than any market report.
-
-If manual processes aren't slowing things down at {{company_name}}, no need to reply — that's genuinely useful to know.
-
-If they are, one sentence on what your team's most painful manual task is would directly shape what I build.
-
-Either way — best of luck with {{company_name}}.
+I'm a founder deciding whether to build something here. Genuinely as useful to hear "we've solved it" as "yes, it's a pain."
 
 Sheyi
 
 Reply 'stop' to opt out.
 ```
 
+## Email 2 — Day 3
+
+```
+Hi {{first_name}},
+
+Different angle on this.
+
+Most people I've spoken to have already tried to fix the manual work problem — usually a spreadsheet that got too complicated, a Zapier flow that half-works, or a VA hired to plug a gap. The fix kind of works, until it doesn't.
+
+Has {{company_name}} gone down any of those roads? I'm curious what you tried and what fell short.
+
+Sheyi
+
+Reply 'stop' to opt out.
+```
+
+## Email 3 — Day 7
+
+```
+Hi {{first_name}},
+
+One thing I keep hearing.
+
+A logistics firm I spoke to last week manually copies from their CRM into Sage every afternoon. Same data, three systems, every day. When I asked how long it was taking, they'd never actually counted.
+
+Is there a task like that at {{company_name}} — something you've just accepted as part of the job?
+
+Sheyi
+
+Reply 'stop' to opt out.
+```
+
+## Email 4 — Day 10
+
+```
+Hi {{first_name}},
+
+Last one from me.
+
+I'm deciding this week whether to build this or shelve it. If manual processes aren't actually a pain where you are, that's genuinely useful — it'd point me somewhere else.
+
+Either way, thanks for your time.
+
+Sheyi
+
+Reply 'stop' to opt out.
+```
+
 ---
 
-## Template variables
+## Template Variables
 
-| Variable | Source |
-|----------|--------|
-| `{{first_name}}` | `leads.json → lead.first_name` (fallback: "there") |
-| `{{company_name}}` | `leads.json → lead.company_name` |
-| `{{original_subject}}` | `sent_log.json → original send's subject` |
+- `{{first_name}}` — fallback: omit greeting, start body directly
+- `{{company_name}}` — fallback: "your business"
+- `{{original_subject}}` — from sent_log.json first send subject
 
 ## Rules
 
-- If `first_name` is missing, use "there"
-- If `company_name` is missing, skip lead
-- Send Email 1 on a weekday 8:00-11:00 AM recipient local time
-- Email 2: +72 hours
-- Email 3: +168 hours
-- Any reply → stop sequence
-- Unsubscribe → add to suppression list
+- Any reply to any email → stop sequence immediately
+- Unsubscribe → suppression list, never send again
+- Email 2: +72 hours from Email 1
+- Email 3: +168 hours from Email 1
+- Email 4: +240 hours from Email 1
