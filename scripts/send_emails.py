@@ -148,7 +148,7 @@ def due_sends(leads: list[dict[str, Any]], suppressed: set[str]) -> list[tuple[d
         if sent == 0:
             queue.append((lead, 1))
             continue
-        if sent >= 3:
+        if sent >= 4:
             continue
         if not last:
             continue
@@ -161,6 +161,8 @@ def due_sends(leads: list[dict[str, Any]], suppressed: set[str]) -> list[tuple[d
             queue.append((lead, 2))
         elif sent == 2 and now - last_dt >= timedelta(hours=168):
             queue.append((lead, 3))
+        elif sent == 3 and now - last_dt >= timedelta(hours=240):
+            queue.append((lead, 4))
     return queue
 
 
