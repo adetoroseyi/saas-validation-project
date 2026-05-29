@@ -180,7 +180,11 @@ def build_mime(lead: dict, subject: str, body: str) -> MIMEText:
     mime["to"] = lead["email"]
     mime["from"] = f"{SENDING_NAME} <{SENDING_EMAIL}>"
     mime["subject"] = subject
+    mime["Reply-To"] = SENDING_EMAIL
+    mime["List-Unsubscribe"] = f"<mailto:{SENDING_EMAIL}?subject=unsubscribe>"
+    mime["List-Unsubscribe-Post"] = "List-Unsubscribe=One-Click"
     return mime
+
 
 
 def send_via_smtp(mime: MIMEText) -> str:
