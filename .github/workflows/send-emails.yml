@@ -38,6 +38,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Send emails
+        id: send
         env:
           SENDING_EMAIL: ${{ secrets.SENDING_EMAIL }}
           SENDING_NAME: ${{ secrets.SENDING_NAME }}
@@ -50,17 +51,22 @@ jobs:
           USE_GMAIL_MCP: '0'
           LOG_LEVEL: INFO
         run: |
-          if [ "${{ github.event.inputs.dry_run }}" = "true" ] || [ "${{ github.event_name }}" = "schedule" -a "${{ github.event.inputs.dry_run }}" = "" ]; then
+          # Scheduled runs always send live.
+          # Manual dispatch defaults to dry-run unless explicitly set to 'false'.
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            DRY_FLAG=""
+          elif [ "${{ github.event.inputs.dry_run }}" != "false" ]; then
             DRY_FLAG="--dry-run"
           else
             DRY_FLAG=""
           fi
-          echo "Running: python scripts/send_emails.py $DRY_FLAG --limit ${{ github.event.inputs.limit || '25' }}"
-          python scripts/send_emails.py $DRY_FLAG \
+          echo "dry_flag=${DRY_FLAG}" >> "$GITHUB_OUTPUT"
+          echo "Running: python scripts/send_emails.py ${DRY_FLAG} --limit ${{ github.event.inputs.limit || '25' }}"
+          python scripts/send_emails.py ${DRY_FLAG} \
             --limit ${{ github.event.inputs.limit || '25' }}
 
       - name: Commit state changes
-        if: github.event.inputs.dry_run != 'true'
+        if: steps.send.outputs.dry_flag == ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
