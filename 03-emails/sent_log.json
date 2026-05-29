@@ -2,9 +2,57 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "total_sent": 0,
-    "daily_counts": {},
-    "last_send_timestamp": null
+    "total_sent": 5,
+    "daily_counts": {
+      "2026-05-29": 5
+    },
+    "last_send_timestamp": "2026-05-29T22:45:26+00:00"
   },
-  "sends": []
+  "sends": [
+    {
+      "lead_id": "lead_000040",
+      "email": "andy.lynch@lynchrenovations.co.uk",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "still doing this manually?",
+      "sent_at": "2026-05-29T22:39:22+00:00",
+      "message_id": "smtp-2026-05-29T22:39:21+00:00"
+    },
+    {
+      "lead_id": "lead_000058",
+      "email": "joe@nadlanmanagement.com",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "how does Nadlan Management find new work",
+      "sent_at": "2026-05-29T22:40:53+00:00",
+      "message_id": "smtp-2026-05-29T22:40:53+00:00"
+    },
+    {
+      "lead_id": "lead_000042",
+      "email": "rob.vanleeuwen@me.com",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "question re: referral process",
+      "sent_at": "2026-05-29T22:42:24+00:00",
+      "message_id": "smtp-2026-05-29T22:42:24+00:00"
+    },
+    {
+      "lead_id": "lead_000066",
+      "email": "huw.jones@star-legal.co.uk",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "question re: referral process",
+      "sent_at": "2026-05-29T22:43:55+00:00",
+      "message_id": "smtp-2026-05-29T22:43:55+00:00"
+    },
+    {
+      "lead_id": "lead_000059",
+      "email": "leticia@terryrealtyteam.com",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "how many tools are you running",
+      "sent_at": "2026-05-29T22:45:26+00:00",
+      "message_id": "smtp-2026-05-29T22:45:26+00:00"
+    }
+  ]
 }
