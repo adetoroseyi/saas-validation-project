@@ -1,21 +1,24 @@
-# Concept C — MetricShield — Email Sequence
+﻿# Concept C — MetricShield — Email Sequence
 
 **Concept:** MetricShield
-**One-liner:** One dashboard that monitors all your business numbers and tells you what needs attention.
+**One-liner:** One view of all your business numbers, without the daily tab safari.
 **Sender:** Sheyi A <sheyi@trysignalbench.com>
-**Sequence:** 3 touches over 7 days
-**Footer (every email):** "Reply 'stop' to opt out."
+**Sequence:** 4 touches over 10 days
 
 ---
 
-## Email 1 — Day 0 — The Question
+## Subject Line Variants
 
-**Subject line variants (rotate, A/B test):**
-1. too many tabs?
-2. dashboard question
-3. how many tools are you running
+**Email 1 (rotate, A/B test):**
+1. `too many tabs?`
+2. `the 9am check`
+3. `how many tools does {{company_name}} run` — fallback: `how many tools are you running`
 
-**Body:**
+**Emails 2–4:** `Re: {{original_subject}}`
+
+---
+
+## Email 1 — Day 0
 
 ```
 Hi {{first_name}},
@@ -26,59 +29,55 @@ I'm looking into whether there's a simpler way to surface the numbers that actua
 
 One question: what's the first number you look at every morning to know if {{company_name}} is having a good day or a bad one?
 
-Just doing research — genuinely curious what that looks like in practice.
+I'm a founder deciding whether to build something here. Genuinely as useful to hear "we've solved this" as "yes, it's a pain."
 
-Thanks,
 Sheyi
-Founder, T&O Ventures
-Sent from my phone
 
 Reply 'stop' to opt out.
 ```
 
----
-
-## Email 2 — Day 3 — The Follow-up (only if no reply)
-
-**Subject line:** `Re: {{original_subject}}`
-
-**Body:**
+## Email 2 — Day 3
 
 ```
 Hi {{first_name}},
 
-Brief follow-up.
+Different angle on this.
 
-I grabbed 10 minutes with a retail owner last week — they're pulling numbers from their EPOS, a spreadsheet, and their bank app every morning just to get a basic picture. Said it takes 20 minutes and they still can't tell at a glance whether yesterday actually made money. Their words: "I'm looking at three screens and I'm still guessing."
+Most business owners I've spoken to have already tried to fix the morning check problem — a Power BI dashboard nobody quite finished, a spreadsheet that pulls from three places but breaks when something changes, a weekly report someone sends manually. The fix kind of works, until it doesn't.
 
-Curious what that morning check actually looks like at {{company_name}} — and whether you'd describe it as under control.
+Has {{company_name}} gone down any of those roads? Curious what you tried and what fell short.
 
-Cheers,
 Sheyi
 
 Reply 'stop' to opt out.
 ```
 
----
-
-## Email 3 — Day 7 — The Breakup (only if no reply)
-
-**Subject line:** `Re: {{original_subject}}`
-
-**Body:**
+## Email 3 — Day 7
 
 ```
 Hi {{first_name}},
 
-Last one from me — I won't keep filling your inbox.
+One thing I keep hearing.
 
-I'm trying to decide whether to kill this project or commit to it. The honest feedback from business owners has shaped my thinking more than any industry data.
+A retail owner I spoke to last week pulls numbers from their EPOS, a spreadsheet, and their bank app every morning just to get a basic picture. Said it takes 20 minutes and they still can't tell at a glance whether yesterday actually made money. Their words: "I'm looking at three screens and I'm still guessing."
 
-If keeping track of the numbers isn't a pain at {{company_name}}, no need to reply — that's useful to know.
+Is yours under control, or still a patchwork?
 
-If it is, one sentence on how you currently stay on top of things would go a long way.
+Sheyi
 
-Either way — thanks for your time.
+Reply 'stop' to opt out.
+```
+
+## Email 4 — Day 10
+
+```
+Hi {{first_name}},
+
+Last one from me.
+
+I'm deciding this week whether to build something here or shelve it. If keeping track of the numbers isn't actually a pain at {{company_name}}, that's genuinely useful — it'd point me somewhere else.
+
+Either way, thanks for your time.
 
 Sheyi
 
@@ -87,20 +86,14 @@ Reply 'stop' to opt out.
 
 ---
 
-## Template variables
+## Template Variables
 
-| Variable | Source |
-|----------|--------|
-| `{{first_name}}` | `leads.json → lead.first_name` (fallback: "there") |
-| `{{company_name}}` | `leads.json → lead.company_name` |
-| `{{original_subject}}` | `sent_log.json → original send's subject` |
+- `{{first_name}}` — fallback: omit greeting, start body directly
+- `{{company_name}}` — fallback: "your business"
+- `{{original_subject}}` — from sent_log.json first send subject
 
 ## Rules
 
-- If `first_name` is missing, use "there"
-- If `company_name` is missing, skip lead
-- Send Email 1 on a weekday 8:00-11:00 AM recipient local time
-- Email 2: +72 hours
-- Email 3: +168 hours
 - Any reply → stop sequence
-- Unsubscribe → add to suppression list
+- Unsubscribe → suppression list
+- Email 2: +72h, Email 3: +168h, Email 4: +240h
