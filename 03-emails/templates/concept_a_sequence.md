@@ -1,106 +1,102 @@
-# Concept A — ComplianceWatch — Email Sequence
+﻿# Concept A — ComplianceWatch — Email Sequence
 
 **Concept:** ComplianceWatch
-**One-liner:** Automated compliance monitoring that alerts you before violations happen.
+**One-liner:** Automated compliance tracking so nothing slips through the gaps.
 **Sender:** Sheyi A <sheyi@trysignalbench.com>
-**Sequence:** 3 touches over 7 days
-**Footer (every email):** "Reply 'stop' to opt out."
+**Sequence:** 4 touches over 10 days
+**Target:** Property management leads only — reassign other industries to Concept D.
 
 ---
 
-## Email 1 — Day 0 — The Question
+## Subject Line Variants
 
-**Subject line variants (rotate, A/B test):**
-1. compliance gap
-2. a risk question
-3. audit prep at {{company_name}}
+**Email 1 (rotate, A/B test):**
+1. `HMO licence renewal`
+2. `landlord compliance at {{company_name}}`
+3. `compliance gap`
 
-**Body:**
+**Emails 2–4:** `Re: {{original_subject}}`
+
+---
+
+## Email 1 — Day 0
 
 ```
 Hi {{first_name}},
 
-Most people I speak to who handle compliance at businesses like yours say the same thing — they only find out there's a gap when it's already a problem. By then it's a scramble.
+A property manager I spoke to recently tracks EPC certificates, gas safety renewals, and section 21 timelines in a shared spreadsheet. Said they've never missed a deadline — but when I asked what their backup was if the person who runs it left, they went quiet.
 
-I'm looking into whether there's a way to flag those gaps earlier, before they turn into violations or missed deadlines.
+I'm looking into whether there's a better way to track this kind of thing — one that doesn't depend on one person knowing where everything lives.
 
-Quick honest question: how does {{company_name}} currently stay on top of compliance requirements — is it mostly manual, outsourced, or do you have something in place?
+Is that a real risk at {{company_name}}?
 
-I'm in early research and genuinely looking for a 'no, this isn't a real problem' as much as a 'yes.'
-
-Thanks,
-Sheyi
-Founder, T&O Ventures
-Sent from my phone
-
-Reply 'stop' to opt out.
-```
-
----
-
-## Email 2 — Day 3 — The Follow-up (only if no reply)
-
-**Subject line:** `Re: {{original_subject}}`
-
-**Body:**
-
-```
-Hi {{first_name}},
-
-Just a brief follow-up.
-
-A finance director I spoke to last week said their team tracks everything in a spreadsheet and a folder of PDFs — and they've still missed things. Said it's not the major regulatory changes that catch them out, it's the tiny, stupid updates that slip through and nobody noticed until it was too late.
-
-Curious if that pattern sounds familiar at {{company_name}}, or if you've found a better way to manage it.
-
-Cheers,
-Sheyi
-
-Reply 'stop' to opt out.
-```
-
----
-
-## Email 3 — Day 7 — The Breakup (only if no reply)
-
-**Subject line:** `Re: {{original_subject}}`
-
-**Body:**
-
-```
-Hi {{first_name}},
-
-Last email from me — I won't keep at it.
-
-I'm trying to decide whether to kill this project or commit to it. Feedback from people actually dealing with compliance day-to-day has been worth more than any industry report.
-
-If staying on top of compliance isn't a real headache at {{company_name}}, no need to reply — that's useful data too.
-
-If it is, one sentence on how you currently handle it would go a long way.
-
-Either way — thanks for your time.
+I'm in early research — genuinely as useful to hear "we've solved this" as "yes, it's a problem."
 
 Sheyi
 
 Reply 'stop' to opt out.
 ```
 
+## Email 2 — Day 3
+
+```
+Hi {{first_name}},
+
+Different angle on this.
+
+Most property managers I've spoken to have already tried to fix the compliance tracking problem — usually a spreadsheet that grew arms, a calendar reminder system someone set up years ago, or a folder structure that only one person understands. The fix kind of works, until it doesn't.
+
+Has {{company_name}} gone down any of those roads? Curious what you tried and what fell short.
+
+Sheyi
+
+Reply 'stop' to opt out.
+```
+
+## Email 3 — Day 7
+
+```
+Hi {{first_name}},
+
+One thing I keep hearing.
+
+A lettings manager I spoke to last week said their team tracks HMO licence renewals in a shared Google Sheet — one tab per property, colour-coded by who owns the task. Said it works fine until someone leaves and nobody knows which colours mean what.
+
+Is there a process like that at {{company_name}} — something that technically works but depends on one person keeping it alive?
+
+Sheyi
+
+Reply 'stop' to opt out.
+```
+
+## Email 4 — Day 10
+
+```
+Hi {{first_name}},
+
+Last one from me.
+
+I'm deciding this week whether to build something here or shelve it. If compliance tracking isn't actually a pain at {{company_name}}, that's genuinely useful — it'd point me somewhere else.
+
+Either way, thanks for your time.
+
+Sheyi
+
+Reply 'stop' to opt out.
+```
+
 ---
 
-## Template variables
+## Template Variables
 
-| Variable | Source |
-|----------|--------|
-| `{{first_name}}` | `leads.json → lead.first_name` (fallback: "there") |
-| `{{company_name}}` | `leads.json → lead.company_name` |
-| `{{original_subject}}` | `sent_log.json → original send's subject` |
+- `{{first_name}}` — fallback: omit greeting, start body directly
+- `{{company_name}}` — fallback: "your business"
+- `{{original_subject}}` — from sent_log.json first send subject
 
 ## Rules
 
-- If `first_name` is missing, use "there" (never "undefined" or blank)
-- If `company_name` is missing, the lead is NOT eligible for Concept A — skip
-- Always send Email 1 on a weekday morning (8:00-11:00 AM recipient local time)
-- Email 2 is sent at the same time of day as Email 1 + 72 hours
-- Email 3 is sent at the same time of day as Email 1 + 168 hours (7 days)
-- Any reply to any email → stop the sequence immediately
-- Unsubscribe → add to suppression list, never send again
+- Only send to leads where industry contains "property management" or "real estate" or "lettings"
+- Reassign all other Concept A leads to Concept D before sending
+- Any reply → stop sequence
+- Unsubscribe → suppression list
+- Email 2: +72h, Email 3: +168h, Email 4: +240h
