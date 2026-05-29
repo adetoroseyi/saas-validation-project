@@ -1,21 +1,24 @@
-# Concept B — LeadPulse — Email Sequence
+﻿# Concept B — LeadPulse — Email Sequence
 
 **Concept:** LeadPulse
 **One-liner:** See exactly which companies are looking for your services right now.
 **Sender:** Sheyi A <sheyi@trysignalbench.com>
-**Sequence:** 3 touches over 7 days
-**Footer (every email):** "Reply 'stop' to opt out."
+**Sequence:** 4 touches over 10 days
 
 ---
 
-## Email 1 — Day 0 — The Question
+## Subject Line Variants
 
-**Subject line variants (rotate, A/B test):**
-1. question re: referral process
-2. how does {{company_name}} find new work
-3. lead tracking at {{company_name}}
+**Email 1 (rotate, A/B test):**
+1. `how does {{company_name}} find new work`
+2. `question re: referral process`
+3. `{{company_name}} pipeline question` — fallback: `pipeline question`
 
-**Body:**
+**Emails 2–4:** `Re: {{original_subject}}`
+
+---
+
+## Email 1 — Day 0
 
 ```
 Hi {{first_name}},
@@ -24,61 +27,59 @@ Most {{industry_peer}}s I've spoken to say the same thing — referrals keep the
 
 I'm looking into whether there's a better way to spot businesses that are actively looking for services like yours — before they've posted a brief or gone to a competitor.
 
-One honest question: where does most of {{company_name}}'s new work actually come from — is it mostly word of mouth, or are you running active outbound or ads?
+One honest question: where does most of {{company_name}}'s new work actually come from — is it mostly word of mouth, or are you running active outbound?
 
-I'm in early research and genuinely looking for a 'no, this isn't a real problem' as much as a 'yes.'
+I'm a founder deciding whether to build something here. Genuinely as useful to hear "we've solved this" as "yes, it's a real problem."
 
-Cheers,
 Sheyi
-Founder, T&O Ventures
-Sent from my phone
 
 Reply 'stop' to opt out.
 ```
 
----
-
-## Email 2 — Day 3 — The Follow-up (only if no reply)
-
-**Subject line:** `Re: {{original_subject}}`
-
-**Body:**
+## Email 2 — Day 3
 
 ```
 Hi {{first_name}},
 
-Quick follow-up.
+Different angle on this.
 
-A recruiter at a mid-size firm I grabbed 10 minutes with last week said their pipeline is basically feast or famine — a few strong months, then it dries up completely with no warning. Said they're still prospecting on LinkedIn the same way they did five years ago because nothing better exists.
+Most {{industry_peer}}s I've spoken to have already tried to get ahead of the pipeline problem — LinkedIn outreach, a referral scheme, a part-time BD person. Something usually sticks for a few months, then it drifts back.
 
-Curious whether that pattern sounds familiar for {{company_name}}, or whether your pipeline feels more predictable.
+What's {{company_name}} tried on this front, and what did or didn't work?
 
-Either answer is useful — cheers,
+Not looking for the polished version — the honest one is more useful.
+
 Sheyi
 
 Reply 'stop' to opt out.
 ```
 
----
-
-## Email 3 — Day 7 — The Breakup (only if no reply)
-
-**Subject line:** `Re: {{original_subject}}`
-
-**Body:**
+## Email 3 — Day 7
 
 ```
 Hi {{first_name}},
 
-Last email from me — I won't keep at it.
+One thing I keep hearing.
 
-I'm trying to decide whether to kill this project or commit to it. Honest input from people actually running service businesses has been more useful than any market report.
+A recruitment agency I spoke to last week said their pipeline is basically feast or famine — strong months, then it dries up completely with no warning. Said they're still prospecting the same way they did five years ago because nothing better exists.
 
-If finding new clients isn't a live problem at {{company_name}}, no need to reply — that's useful data too.
+Is that pattern familiar at {{company_name}}, or does your pipeline feel more predictable?
 
-If it is, one sentence on where your clients currently come from would go a long way.
+Sheyi
 
-Either way — thanks for the time.
+Reply 'stop' to opt out.
+```
+
+## Email 4 — Day 10
+
+```
+Hi {{first_name}},
+
+Last one from me.
+
+I'm deciding this week whether to build something here or shelve it. If finding new clients isn't actually a live problem at {{company_name}}, that's genuinely useful — it'd point me somewhere else.
+
+Either way, thanks for your time.
 
 Sheyi
 
@@ -87,35 +88,15 @@ Reply 'stop' to opt out.
 
 ---
 
-## Template variables
+## Template Variables
 
-| Variable | Source |
-|----------|--------|
-| `{{first_name}}` | `leads.json → lead.first_name` (fallback: "there") |
-| `{{company_name}}` | `leads.json → lead.company_name` |
-| `{{original_subject}}` | `sent_log.json → original send's subject` |
-| `{{industry_peer}}` | Set per lead segment — see values below |
-
-**`{{industry_peer}}` values by segment:**
-- Marketing / creative agencies → `agency owner`
-- IT / tech consultants → `IT consultant`
-- Recruiters / staffing firms → `recruiter`
-- Management consultants → `consultant`
-- Default fallback → `service business owner`
-
-**Segment observation variants (Email 1, line 1):**
-The default observation "referrals keep the lights on, but they can't tell you when the next one's coming" works well for agencies and recruiters. For IT and management consultants, swap for a sharper variant:
-
-- IT consultants: *"Most IT consultants I've spoken to say the same thing — the work comes from who you know, but there's no reliable way to know who's actually looking right now."*
-- Management consultants: *"Most consultants I've spoken to say the same thing — mandates come through relationships, but there's no way to see who's in the market for one before they've already chosen someone."*
+- `{{first_name}}` — fallback: omit greeting, start body directly
+- `{{company_name}}` — fallback: "your business"
+- `{{industry_peer}}` — resolved from SIC code or industry keyword; fallback: "service business owner"
+- `{{original_subject}}` — from sent_log.json first send subject
 
 ## Rules
 
-- If `first_name` is missing, use "there"
-- If `company_name` is missing, skip lead
-- Set `industry_peer` based on the lead's SIC code or source tag before sending — never use the raw variable name
-- Send Email 1 on a weekday 8:00-11:00 AM recipient local time
-- Email 2: +72 hours
-- Email 3: +168 hours
 - Any reply → stop sequence
-- Unsubscribe → add to suppression list
+- Unsubscribe → suppression list
+- Email 2: +72h, Email 3: +168h, Email 4: +240h
