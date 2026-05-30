@@ -9,6 +9,10 @@ on:
         description: 'Max leads per search query'
         required: false
         default: '20'
+      queries:
+        description: 'Number of queries to run per day'
+        required: false
+        default: '8'
 
 jobs:
   source:
@@ -40,7 +44,7 @@ jobs:
           LOG_LEVEL: INFO
         run: |
           python scripts/source_leads.py \
-            --max-per-query ${{ github.event.inputs.max_per_query || '20' }}
+            --queries ${{ github.event.inputs.queries || '8' }} --max-per-query ${{ github.event.inputs.max_per_query || '20' }}
 
       - name: Run source_companies_house.py
         env:
