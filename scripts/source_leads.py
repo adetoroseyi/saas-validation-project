@@ -48,29 +48,53 @@ DEFAULT_ACTOR = "compass/crawler-google-places"
 # Rotate through segments over the project lifetime (see saas_concepts.md
 # for the expansion schedule).
 SEARCH_POOL = [
-    # English-speaking markets (weeks 1-2)
-    {"search": "marketing agency", "location": "Manchester, UK"},
-    {"search": "marketing agency", "location": "Austin, Texas, USA"},
-    {"search": "marketing agency", "location": "Melbourne, Australia"},
-    {"search": "accounting firm", "location": "Birmingham, UK"},
-    {"search": "accounting firm", "location": "Toronto, Canada"},
-    {"search": "recruitment agency", "location": "London, UK"},
-    {"search": "recruitment agency", "location": "Sydney, Australia"},
-    {"search": "construction company", "location": "Leeds, UK"},
-    {"search": "construction company", "location": "Denver, Colorado, USA"},
-    {"search": "IT services", "location": "Dublin, Ireland"},
-    {"search": "IT services", "location": "Edinburgh, UK"},
-    {"search": "logistics company", "location": "Rotterdam, Netherlands"},
-    {"search": "property management", "location": "Miami, Florida, USA"},
-    {"search": "law firm", "location": "Bristol, UK"},
-    # Europe (weeks 3-4)
-    {"search": "marketing agentur", "location": "Berlin, Germany"},
-    {"search": "recruitment", "location": "Amsterdam, Netherlands"},
-    {"search": "consulting firm", "location": "Stockholm, Sweden"},
-    # Global (week 5+)
-    {"search": "marketing agency", "location": "Dubai, UAE"},
-    {"search": "IT services", "location": "Singapore"},
-    {"search": "consulting firm", "location": "Bangalore, India"},
+    # Recruitment & Staffing — Concept B (LeadPulse)
+    {"search": "recruitment agency",          "location": "London, UK"},
+    {"search": "recruitment agency",          "location": "Manchester, UK"},
+    {"search": "recruitment agency",          "location": "Birmingham, UK"},
+    {"search": "recruitment agency",          "location": "Leeds, UK"},
+    {"search": "recruitment agency",          "location": "Glasgow, UK"},
+    {"search": "staffing agency",             "location": "London, UK"},
+    {"search": "staffing agency",             "location": "Birmingham, UK"},
+    {"search": "recruitment agency",          "location": "Sydney, Australia"},
+    {"search": "recruitment agency",          "location": "Melbourne, Australia"},
+    {"search": "recruitment bureau",          "location": "Amsterdam, Netherlands"},
+    {"search": "recruitment bureau",          "location": "Rotterdam, Netherlands"},
+
+    # Property Management & Lettings — Concept A (ComplianceWatch)
+    {"search": "property management company", "location": "London, UK"},
+    {"search": "property management company", "location": "Manchester, UK"},
+    {"search": "property management company", "location": "Birmingham, UK"},
+    {"search": "letting agent",               "location": "London, UK"},
+    {"search": "letting agent",               "location": "Manchester, UK"},
+    {"search": "letting agent",               "location": "Leeds, UK"},
+    {"search": "letting agent",               "location": "Bristol, UK"},
+    {"search": "letting agent",               "location": "Edinburgh, UK"},
+
+    # Logistics & Freight — Concept D (ProcessFlow)
+    {"search": "logistics company",           "location": "Rotterdam, Netherlands"},
+    {"search": "logistics company",           "location": "Amsterdam, Netherlands"},
+    {"search": "logistics company",           "location": "Birmingham, UK"},
+    {"search": "logistics company",           "location": "Manchester, UK"},
+    {"search": "freight company",             "location": "Rotterdam, Netherlands"},
+    {"search": "freight forwarder",           "location": "London, UK"},
+    {"search": "logistics company",           "location": "Sydney, Australia"},
+    {"search": "transport company",           "location": "Birmingham, UK"},
+
+    # Marketing Agencies — Concept C (MetricShield)
+    {"search": "marketing agency",            "location": "London, UK"},
+    {"search": "marketing agency",            "location": "Manchester, UK"},
+    {"search": "marketing agency",            "location": "Birmingham, UK"},
+    {"search": "marketing agency",            "location": "Amsterdam, Netherlands"},
+    {"search": "marketing agency",            "location": "Sydney, Australia"},
+    {"search": "marketing agency",            "location": "Melbourne, Australia"},
+    {"search": "digital marketing agency",    "location": "Leeds, UK"},
+    {"search": "digital marketing agency",    "location": "Glasgow, UK"},
+
+    # Additional UK service businesses — cross-concept
+    {"search": "accounting firm",             "location": "London, UK"},
+    {"search": "accounting firm",             "location": "Manchester, UK"},
+    {"search": "HR consulting",               "location": "London, UK"},
 ]
 
 
@@ -171,7 +195,7 @@ def extract_lead(item: dict[str, Any]) -> dict[str, Any] | None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--queries", type=int, default=5, help="Number of queries to run")
+    parser.add_argument("--queries", type=int, default=8, help="Number of queries to run")
     parser.add_argument("--max-per-query", type=int, default=20)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
@@ -182,7 +206,7 @@ def main() -> int:
         return 2
 
     actor_id = os.getenv("APIFY_GOOGLE_MAPS_ACTOR", DEFAULT_ACTOR)
-    daily_target = int(os.getenv("DAILY_LEAD_TARGET", "75"))
+    daily_target = int(os.getenv("DAILY_LEAD_TARGET", "120"))
 
     # Load existing state
     leads_data = load_json(LEADS_PATH) or {
