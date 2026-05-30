@@ -1,4 +1,4 @@
-name: Monitor Responses
+﻿name: Monitor Responses
 
 on:
   schedule:
@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Check for replies
+      - name: Check for replies and auto-respond
         env:
           SENDING_EMAIL: ${{ secrets.SENDING_EMAIL }}
           SENDING_NAME: ${{ secrets.SENDING_NAME }}
@@ -32,9 +32,18 @@ jobs:
           EMAILOCTOPUS_API_KEY: ${{ secrets.EMAILOCTOPUS_API_KEY }}
           EMAILOCTOPUS_LIST_ID: ${{ secrets.EMAILOCTOPUS_LIST_ID }}
           USE_SMTP: '1'
-          AUTO_SEND_REPLIES: ${{ secrets.AUTO_SEND_REPLIES }}
+          AUTO_SEND_REPLIES: '1'
           LOG_LEVEL: INFO
         run: python scripts/monitor_responses.py --once
+
+      - name: Send digest notification (only if new replies)
+        env:
+          SENDING_EMAIL: ${{ secrets.SENDING_EMAIL }}
+          SENDING_NAME: ${{ secrets.SENDING_NAME }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFICATION_EMAIL: ${{ secrets.NOTIFICATION_EMAIL }}
+          LOG_LEVEL: INFO
+        run: python scripts/notify.py --digest --hours 3
 
       - name: Commit response data
         run: |
