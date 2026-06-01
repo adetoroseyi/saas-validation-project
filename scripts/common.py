@@ -122,7 +122,7 @@ def load_json(path: Path) -> dict[str, Any]:
     """Load a JSON file, returning {} if the file is missing."""
     if not path.exists():
         return {}
-    with path.open("r", encoding="utf-8") as f:
+    with path.open("r", encoding="utf-8-sig") as f:
         return json.load(f)
 
 
@@ -248,7 +248,7 @@ def _load_launch_list() -> dict:
             },
             "contacts": [],
         }
-    with LAUNCH_LIST_PATH.open("r", encoding="utf-8") as f:
+    with LAUNCH_LIST_PATH.open("r", encoding="utf-8-sig") as f:
         return json.load(f)
 
 

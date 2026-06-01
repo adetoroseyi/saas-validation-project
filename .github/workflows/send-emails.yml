@@ -46,7 +46,7 @@ jobs:
           EMAILOCTOPUS_API_KEY: ${{ secrets.EMAILOCTOPUS_API_KEY }}
           EMAILOCTOPUS_LIST_ID: ${{ secrets.EMAILOCTOPUS_LIST_ID }}
           DAILY_SEND_CAP: ${{ github.event.inputs.limit || '25' }}
-          MIN_SECONDS_BETWEEN_SENDS: ${{ secrets.MIN_SECONDS_BETWEEN_SENDS || '90' }}
+          MIN_SECONDS_BETWEEN_SENDS: '90'
           USE_SMTP: '1'
           USE_GMAIL_MCP: '0'
           LOG_LEVEL: INFO
