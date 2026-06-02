@@ -4,7 +4,7 @@
     "project": "T&O Ventures SaaS Validation",
     "description": "Master launch list. Every contact reached during validation is saved here automatically when Email 1 is sent. Enriched with response data when they reply. Ready for product launch outreach - do not contact anyone where do_not_contact is true.",
     "total_contacts": 54,
-    "last_updated": "2026-06-02T12:46:33+00:00"
+    "last_updated": "2026-06-02T16:26:35+00:00"
   },
   "contacts": [
     {
@@ -87,11 +87,11 @@
       "country": "GB",
       "concept_tested": "B",
       "concept_name": "LeadPulse",
-      "interest_level": "unknown",
-      "response_type": null,
-      "response_notes": null,
+      "interest_level": "medium",
+      "response_type": "question",
+      "response_notes": "I am out of the office on annual leave, returning to work on Monday 8th June 2026\r\n\r\n\r\n\r\nIMPORTANT CYBER SECURITY INFORMATION:\r\nAs a result of the increased risk posed by cyber fraud, in particular those relating to bank account details, please note that at no point during a tran",
       "added_to_list_date": "2026-05-29T22:43:55+00:00",
-      "last_interaction_date": "2026-05-29T22:43:55+00:00",
+      "last_interaction_date": "2026-06-02T16:26:25+00:00",
       "launch_segment": null,
       "do_not_contact": false
     },
@@ -704,10 +704,10 @@
       "concept_tested": "D",
       "concept_name": "ProcessFlow",
       "interest_level": "unknown",
-      "response_type": null,
-      "response_notes": null,
+      "response_type": "unsubscribe",
+      "response_notes": "stop \r\n\r\n> Am 02.06.2026 um 14:12 schrieb Sheyi A <sheyi@trysignalbench.com>:\r\n> \r\n> Hi Tom,\r\n> \r\n> There's a point in most growing businesses where a process works — but only because one person is manually holding it together.\r\n> \r\n> It's usually not one big broken thing. It's a",
       "added_to_list_date": "2026-06-02T12:12:43+00:00",
-      "last_interaction_date": "2026-06-02T12:12:43+00:00",
+      "last_interaction_date": "2026-06-02T16:26:35+00:00",
       "launch_segment": null,
       "do_not_contact": false
     },

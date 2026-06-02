@@ -2,15 +2,46 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "total_responses": 0,
+    "total_responses": 3,
     "classifications": {
       "interested": 0,
       "pricing_question": 0,
       "not_interested": 0,
-      "unsubscribe": 0,
+      "unsubscribe": 2,
       "auto_reply": 0,
-      "question": 0
+      "question": 1
     }
   },
-  "responses": []
+  "responses": [
+    {
+      "lead_id": "lead_000066",
+      "email": "Huw.Jones@star-legal.co.uk",
+      "company_name": "Star Legal Clifton",
+      "concept": "B",
+      "classification": "question",
+      "received_date": "2026-06-02T16:26:26+00:00",
+      "summary": "I am out of the office on annual leave, returning to work on Monday 8th June 2026\r\n\r\n\r\n\r\nIMPORTANT CYBER SECURITY INFORMATION:\r\nAs a result of the increased risk posed by cyber fraud, in particular those relating to bank account details, please note that at no point during a tran",
+      "thread_id": "<6a1ed104.186b9b46.2ef73b.84ad@mx.google.com>"
+    },
+    {
+      "lead_id": "lead_000077",
+      "email": "tom.schneider@wordliner.com",
+      "company_name": "Wordliner GmbH",
+      "concept": "D",
+      "classification": "unsubscribe",
+      "received_date": "2026-06-02T16:26:30+00:00",
+      "summary": "Apple Mail hat diese E-Mail gesendet, um das Abo von „unsubscribe“ zu beenden.",
+      "thread_id": "<52CA3902-81D5-4596-B7CE-9E85AC06781F@wordliner.com>"
+    },
+    {
+      "lead_id": "lead_000077",
+      "email": "tom.schneider@wordliner.com",
+      "company_name": "Wordliner GmbH",
+      "concept": "D",
+      "classification": "unsubscribe",
+      "received_date": "2026-06-02T16:26:35+00:00",
+      "summary": "stop \r\n\r\n> Am 02.06.2026 um 14:12 schrieb Sheyi A <sheyi@trysignalbench.com>:\r\n> \r\n> Hi Tom,\r\n> \r\n> There's a point in most growing businesses where a process works — but only because one person is manually holding it together.\r\n> \r\n> It's usually not one big broken thing. It's a",
+      "thread_id": "<6a1ec8ba.23765db7.2a044e.5d92@mx.google.com>"
+    }
+  ]
 }
