@@ -2,13 +2,14 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "total_sent": 55,
+    "total_sent": 80,
     "daily_counts": {
       "2026-05-29": 5,
       "2026-06-01": 25,
-      "2026-06-02": 25
+      "2026-06-02": 25,
+      "2026-06-03": 25
     },
-    "last_send_timestamp": "2026-06-02T12:48:05+00:00"
+    "last_send_timestamp": "2026-06-03T13:23:11+00:00"
   },
   "sends": [
     {
@@ -505,6 +506,231 @@
       "subject": "Re: question re: referral process",
       "sent_at": "2026-06-02T12:48:05+00:00",
       "message_id": "smtp-2026-06-02T12:48:05+00:00"
+    },
+    {
+      "lead_id": "lead_000024",
+      "email": "cameron.tovey@apm.net.au",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "manual process question",
+      "sent_at": "2026-06-03T12:46:25+00:00",
+      "message_id": "smtp-2026-06-03T12:46:24+00:00"
+    },
+    {
+      "lead_id": "lead_000007",
+      "email": "ashish@cnotetax.ca",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "dashboard question",
+      "sent_at": "2026-06-03T12:47:56+00:00",
+      "message_id": "smtp-2026-06-03T12:47:56+00:00"
+    },
+    {
+      "lead_id": "lead_000078",
+      "email": "keith@nounicornyet.com",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "question re: referral process",
+      "sent_at": "2026-06-03T12:49:27+00:00",
+      "message_id": "smtp-2026-06-03T12:49:27+00:00"
+    },
+    {
+      "lead_id": "lead_000090",
+      "email": "derek.barnick@roberthalf.com",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "question re: referral process",
+      "sent_at": "2026-06-03T12:50:59+00:00",
+      "message_id": "smtp-2026-06-03T12:50:58+00:00"
+    },
+    {
+      "lead_id": "lead_000088",
+      "email": "m.flohil@morganrecruitmentgroup.com",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "still doing this manually?",
+      "sent_at": "2026-06-03T12:52:30+00:00",
+      "message_id": "smtp-2026-06-03T12:52:30+00:00"
+    },
+    {
+      "lead_id": "lead_000018",
+      "email": "paul@quicktemp.co.uk",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "question re: referral process",
+      "sent_at": "2026-06-03T12:54:01+00:00",
+      "message_id": "smtp-2026-06-03T12:54:01+00:00"
+    },
+    {
+      "lead_id": "lead_000040",
+      "email": "andy.lynch@lynchrenovations.co.uk",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: still doing this manually?",
+      "sent_at": "2026-06-03T12:55:33+00:00",
+      "message_id": "smtp-2026-06-03T12:55:33+00:00"
+    },
+    {
+      "lead_id": "lead_000097",
+      "email": "max.vandenbergh@stroomrecruitment.com",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "still doing this manually?",
+      "sent_at": "2026-06-03T12:57:05+00:00",
+      "message_id": "smtp-2026-06-03T12:57:04+00:00"
+    },
+    {
+      "lead_id": "lead_000014",
+      "email": "george.tingle@daksta.com",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "lead tracking at Daksta",
+      "sent_at": "2026-06-03T12:58:48+00:00",
+      "message_id": "smtp-2026-06-03T12:58:48+00:00"
+    },
+    {
+      "lead_id": "lead_000026",
+      "email": "carla@farronresearch.com.au",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "lead tracking at Farron Research Group Pty Ltd Sydney",
+      "sent_at": "2026-06-03T13:00:21+00:00",
+      "message_id": "smtp-2026-06-03T13:00:20+00:00"
+    },
+    {
+      "lead_id": "lead_000059",
+      "email": "leticia@terryrealtyteam.com",
+      "concept": "C",
+      "email_number": 2,
+      "subject": "Re: how many tools are you running",
+      "sent_at": "2026-06-03T13:01:52+00:00",
+      "message_id": "smtp-2026-06-03T13:01:52+00:00"
+    },
+    {
+      "lead_id": "lead_000058",
+      "email": "joe@nadlanmanagement.com",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: how does Nadlan Management find new work",
+      "sent_at": "2026-06-03T13:03:23+00:00",
+      "message_id": "smtp-2026-06-03T13:03:23+00:00"
+    },
+    {
+      "lead_id": "lead_000020",
+      "email": "nicole.taggart@strong-group.co.uk",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "how much time does Strong Recruitment Group spend on repeat tasks",
+      "sent_at": "2026-06-03T13:04:55+00:00",
+      "message_id": "smtp-2026-06-03T13:04:54+00:00"
+    },
+    {
+      "lead_id": "lead_000046",
+      "email": "pamelateranaj@landseaglobal.com",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "how does LandSea Global Transport and Trade B.V find new work",
+      "sent_at": "2026-06-03T13:06:26+00:00",
+      "message_id": "smtp-2026-06-03T13:06:26+00:00"
+    },
+    {
+      "lead_id": "lead_000057",
+      "email": "ivan@pristinepm.com",
+      "concept": "A",
+      "email_number": 1,
+      "subject": "compliance gap",
+      "sent_at": "2026-06-03T13:07:57+00:00",
+      "message_id": "smtp-2026-06-03T13:07:57+00:00"
+    },
+    {
+      "lead_id": "lead_000096",
+      "email": "jos.ruiter@iqstaffing.nl",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "manual process question",
+      "sent_at": "2026-06-03T13:09:29+00:00",
+      "message_id": "smtp-2026-06-03T13:09:29+00:00"
+    },
+    {
+      "lead_id": "lead_000016",
+      "email": "shani.brooks@nursdoc.com",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "still doing this manually?",
+      "sent_at": "2026-06-03T13:11:00+00:00",
+      "message_id": "smtp-2026-06-03T13:11:00+00:00"
+    },
+    {
+      "lead_id": "lead_000044",
+      "email": "hf.ye@ctsfreight.com",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "how much time does CTS International Logistics (Netherlands) BV spend on repeat tasks",
+      "sent_at": "2026-06-03T13:12:32+00:00",
+      "message_id": "smtp-2026-06-03T13:12:31+00:00"
+    },
+    {
+      "lead_id": "lead_000003",
+      "email": "george@clearadsagency.com",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "too many tabs?",
+      "sent_at": "2026-06-03T13:14:03+00:00",
+      "message_id": "smtp-2026-06-03T13:14:03+00:00"
+    },
+    {
+      "lead_id": "lead_000086",
+      "email": "donnawilson@michaelpage.com",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "lead tracking at Michael Page | Recruitment Agency (permanent & interim)",
+      "sent_at": "2026-06-03T13:15:34+00:00",
+      "message_id": "smtp-2026-06-03T13:15:34+00:00"
+    },
+    {
+      "lead_id": "lead_000065",
+      "email": "deborah.clark@newsouthlaw.co.uk",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "how much time does New South Law Limited spend on repeat tasks",
+      "sent_at": "2026-06-03T13:17:06+00:00",
+      "message_id": "smtp-2026-06-03T13:17:05+00:00"
+    },
+    {
+      "lead_id": "lead_000032",
+      "email": "elissa@curis.com.au",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "how much time does Curis Recruitment spend on repeat tasks",
+      "sent_at": "2026-06-03T13:18:37+00:00",
+      "message_id": "smtp-2026-06-03T13:18:37+00:00"
+    },
+    {
+      "lead_id": "lead_000002",
+      "email": "krutarth@telsamedia.com",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "lead tracking at Telsa Media",
+      "sent_at": "2026-06-03T13:20:08+00:00",
+      "message_id": "smtp-2026-06-03T13:20:08+00:00"
+    },
+    {
+      "lead_id": "lead_000063",
+      "email": "alec@parkpl.co",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "too many tabs?",
+      "sent_at": "2026-06-03T13:21:40+00:00",
+      "message_id": "smtp-2026-06-03T13:21:39+00:00"
+    },
+    {
+      "lead_id": "lead_000038",
+      "email": "joy@marmee.com",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "lead tracking at Murphy Group, Leeds Office",
+      "sent_at": "2026-06-03T13:23:11+00:00",
+      "message_id": "smtp-2026-06-03T13:23:10+00:00"
     }
   ]
 }
