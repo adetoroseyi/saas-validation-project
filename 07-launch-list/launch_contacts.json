@@ -4,7 +4,7 @@
     "project": "T&O Ventures SaaS Validation",
     "description": "Master launch list. Every contact reached during validation is saved here automatically when Email 1 is sent. Enriched with response data when they reply. Ready for product launch outreach - do not contact anyone where do_not_contact is true.",
     "total_contacts": 89,
-    "last_updated": "2026-06-04T11:56:57+00:00"
+    "last_updated": "2026-06-04T12:46:36+00:00"
   },
   "contacts": [
     {
@@ -1825,11 +1825,11 @@
       "country": "GB",
       "concept_tested": "C",
       "concept_name": "MetricShield",
-      "interest_level": "unknown",
-      "response_type": null,
-      "response_notes": null,
+      "interest_level": "medium",
+      "response_type": "question",
+      "response_notes": "Hello\r\n\r\nI have now left the business.\r\n\r\nPlease forward any emails to taylor.lawson@pin-point.co.uk\r\n\r\nThank You\r\n\r\nDisclaimer\r\n\r\nThe information contained in this communication from the sender is confidential. It is intended solely for use by the recipient and others authorized",
       "added_to_list_date": "2026-06-04T11:35:37+00:00",
-      "last_interaction_date": "2026-06-04T11:35:37+00:00",
+      "last_interaction_date": "2026-06-04T12:46:36+00:00",
       "launch_segment": null,
       "do_not_contact": false
     },

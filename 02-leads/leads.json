@@ -489,10 +489,10 @@
       "employee_estimate": "5-20",
       "source": "google_maps_linkedin",
       "sourced_date": "2026-04-13",
-      "status": "contacted",
+      "status": "responded",
       "emails_sent": 1,
       "last_email_date": "2026-06-04T11:35:37+00:00",
-      "response_status": null,
+      "response_status": "question",
       "notes": "",
       "id": "lead_000023",
       "concept_assigned": "C"

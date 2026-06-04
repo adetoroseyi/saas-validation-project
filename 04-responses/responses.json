@@ -2,14 +2,14 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "total_responses": 3,
+    "total_responses": 4,
     "classifications": {
       "interested": 0,
       "pricing_question": 0,
       "not_interested": 0,
       "unsubscribe": 2,
       "auto_reply": 0,
-      "question": 1
+      "question": 2
     }
   },
   "responses": [
@@ -42,6 +42,16 @@
       "received_date": "2026-06-02T16:26:35+00:00",
       "summary": "stop \r\n\r\n> Am 02.06.2026 um 14:12 schrieb Sheyi A <sheyi@trysignalbench.com>:\r\n> \r\n> Hi Tom,\r\n> \r\n> There's a point in most growing businesses where a process works — but only because one person is manually holding it together.\r\n> \r\n> It's usually not one big broken thing. It's a",
       "thread_id": "<6a1ec8ba.23765db7.2a044e.5d92@mx.google.com>"
+    },
+    {
+      "lead_id": "lead_000023",
+      "email": "Megan.Laidler@pin-point.co.uk",
+      "company_name": "Pin Point Recruitment",
+      "concept": "C",
+      "classification": "question",
+      "received_date": "2026-06-04T12:46:37+00:00",
+      "summary": "Hello\r\n\r\nI have now left the business.\r\n\r\nPlease forward any emails to taylor.lawson@pin-point.co.uk\r\n\r\nThank You\r\n\r\nDisclaimer\r\n\r\nThe information contained in this communication from the sender is confidential. It is intended solely for use by the recipient and others authorized",
+      "thread_id": "<6a216308.f6fc7aa5.15841e.0f47@mx.google.com>"
     }
   ]
 }
