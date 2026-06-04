@@ -2,14 +2,15 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "total_sent": 80,
+    "total_sent": 105,
     "daily_counts": {
       "2026-05-29": 5,
       "2026-06-01": 25,
       "2026-06-02": 25,
-      "2026-06-03": 25
+      "2026-06-03": 25,
+      "2026-06-04": 25
     },
-    "last_send_timestamp": "2026-06-03T13:23:11+00:00"
+    "last_send_timestamp": "2026-06-04T11:56:58+00:00"
   },
   "sends": [
     {
@@ -731,6 +732,231 @@
       "subject": "lead tracking at Murphy Group, Leeds Office",
       "sent_at": "2026-06-03T13:23:11+00:00",
       "message_id": "smtp-2026-06-03T13:23:10+00:00"
+    },
+    {
+      "lead_id": "lead_000033",
+      "email": "pooja.shah@talentfocus.com.au",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: manual process question",
+      "sent_at": "2026-06-04T11:20:21+00:00",
+      "message_id": "smtp-2026-06-04T11:20:21+00:00"
+    },
+    {
+      "lead_id": "lead_000074",
+      "email": "maik@mr2-media.de",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "lead tracking at MR2 Media",
+      "sent_at": "2026-06-04T11:21:53+00:00",
+      "message_id": "smtp-2026-06-04T11:21:52+00:00"
+    },
+    {
+      "lead_id": "lead_000070",
+      "email": "ved@watkinssolicitors.co.uk",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "how does Watkins Solicitors find new work",
+      "sent_at": "2026-06-04T11:23:24+00:00",
+      "message_id": "smtp-2026-06-04T11:23:24+00:00"
+    },
+    {
+      "lead_id": "lead_000052",
+      "email": "tboesch@redtransportlogistics.com",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: still doing this manually?",
+      "sent_at": "2026-06-04T11:24:56+00:00",
+      "message_id": "smtp-2026-06-04T11:24:56+00:00"
+    },
+    {
+      "lead_id": "lead_000019",
+      "email": "ash.kohli@hcpautomotive.com",
+      "concept": "C",
+      "email_number": 2,
+      "subject": "Re: dashboard question",
+      "sent_at": "2026-06-04T11:26:27+00:00",
+      "message_id": "smtp-2026-06-04T11:26:27+00:00"
+    },
+    {
+      "lead_id": "lead_000089",
+      "email": "mark.geerlink@financerecruitmentpartners.nl",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "how much time does Finance Recruitment Partners spend on repeat tasks",
+      "sent_at": "2026-06-04T11:27:59+00:00",
+      "message_id": "smtp-2026-06-04T11:27:59+00:00"
+    },
+    {
+      "lead_id": "lead_000039",
+      "email": "daniel.wright@priestleyconstruction.co.uk",
+      "concept": "C",
+      "email_number": 2,
+      "subject": "Re: too many tabs?",
+      "sent_at": "2026-06-04T11:29:30+00:00",
+      "message_id": "smtp-2026-06-04T11:29:30+00:00"
+    },
+    {
+      "lead_id": "lead_000085",
+      "email": "esther@lightupyourtalent.com",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "still doing this manually?",
+      "sent_at": "2026-06-04T11:31:02+00:00",
+      "message_id": "smtp-2026-06-04T11:31:02+00:00"
+    },
+    {
+      "lead_id": "lead_000017",
+      "email": "jerome.francis@thebestconnection.co.uk",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "how much time does The Best Connection - Croydon spend on repeat tasks",
+      "sent_at": "2026-06-04T11:32:34+00:00",
+      "message_id": "smtp-2026-06-04T11:32:33+00:00"
+    },
+    {
+      "lead_id": "lead_000092",
+      "email": "marc@bluebirdrecruitment.com",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "how much time does Bluebird Recruitment spend on repeat tasks",
+      "sent_at": "2026-06-04T11:34:06+00:00",
+      "message_id": "smtp-2026-06-04T11:34:05+00:00"
+    },
+    {
+      "lead_id": "lead_000023",
+      "email": "megan.laidler@pin-point.co.uk",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "how many tools are you running",
+      "sent_at": "2026-06-04T11:35:38+00:00",
+      "message_id": "smtp-2026-06-04T11:35:37+00:00"
+    },
+    {
+      "lead_id": "lead_000005",
+      "email": "samantha@murphychung.ca",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: how much time does Murphy & Chung Professional Corporation spend on repeat tasks",
+      "sent_at": "2026-06-04T11:37:09+00:00",
+      "message_id": "smtp-2026-06-04T11:37:09+00:00"
+    },
+    {
+      "lead_id": "lead_000022",
+      "email": "yogi@idriverecruitment.co.uk",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: how does Idrive Recruitment Ltd find new work",
+      "sent_at": "2026-06-04T11:38:41+00:00",
+      "message_id": "smtp-2026-06-04T11:38:41+00:00"
+    },
+    {
+      "lead_id": "lead_000075",
+      "email": "matthias@hatzak.de",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "too many tabs?",
+      "sent_at": "2026-06-04T11:40:12+00:00",
+      "message_id": "smtp-2026-06-04T11:40:12+00:00"
+    },
+    {
+      "lead_id": "lead_000041",
+      "email": "louise.chambers@bagnalls.co.uk",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: how much time does Bagnalls Painting & Decorating Contractors spend on repeat tasks",
+      "sent_at": "2026-06-04T11:41:44+00:00",
+      "message_id": "smtp-2026-06-04T11:41:44+00:00"
+    },
+    {
+      "lead_id": "lead_000048",
+      "email": "ruard@logistiek24.nl",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: manual process question",
+      "sent_at": "2026-06-04T11:43:15+00:00",
+      "message_id": "smtp-2026-06-04T11:43:15+00:00"
+    },
+    {
+      "lead_id": "lead_000050",
+      "email": "cedric.miller@steinweg.com",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: lead tracking at C. Steinweg – Handelsveem B.V. BEATRIX TERMINAL",
+      "sent_at": "2026-06-04T11:44:46+00:00",
+      "message_id": "smtp-2026-06-04T11:44:46+00:00"
+    },
+    {
+      "lead_id": "lead_000043",
+      "email": "juan@tgslogistics.com",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "dashboard question",
+      "sent_at": "2026-06-04T11:46:18+00:00",
+      "message_id": "smtp-2026-06-04T11:46:17+00:00"
+    },
+    {
+      "lead_id": "lead_000072",
+      "email": "sarah@battrickclark.co.uk",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "manual process question",
+      "sent_at": "2026-06-04T11:47:49+00:00",
+      "message_id": "smtp-2026-06-04T11:47:49+00:00"
+    },
+    {
+      "lead_id": "lead_000012",
+      "email": "jurai.sveda@driversdirect.co.uk",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "manual process question",
+      "sent_at": "2026-06-04T11:49:21+00:00",
+      "message_id": "smtp-2026-06-04T11:49:21+00:00"
+    },
+    {
+      "lead_id": "lead_000061",
+      "email": "gabriel@bzginternational.com",
+      "concept": "A",
+      "email_number": 1,
+      "subject": "a risk question",
+      "sent_at": "2026-06-04T11:50:53+00:00",
+      "message_id": "smtp-2026-06-04T11:50:52+00:00"
+    },
+    {
+      "lead_id": "lead_000006",
+      "email": "kevin.d.ball@ebdcas.com",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: question re: referral process",
+      "sent_at": "2026-06-04T11:52:24+00:00",
+      "message_id": "smtp-2026-06-04T11:52:24+00:00"
+    },
+    {
+      "lead_id": "lead_000035",
+      "email": "harry.pickles@bgallagherconstruction.co.uk",
+      "concept": "C",
+      "email_number": 2,
+      "subject": "Re: how many tools are you running",
+      "sent_at": "2026-06-04T11:53:55+00:00",
+      "message_id": "smtp-2026-06-04T11:53:55+00:00"
+    },
+    {
+      "lead_id": "lead_000015",
+      "email": "avi.samra@driverhire.co.uk",
+      "concept": "C",
+      "email_number": 2,
+      "subject": "Re: too many tabs?",
+      "sent_at": "2026-06-04T11:55:26+00:00",
+      "message_id": "smtp-2026-06-04T11:55:26+00:00"
+    },
+    {
+      "lead_id": "lead_000047",
+      "email": "friso@vslogistics.nl",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "how many tools are you running",
+      "sent_at": "2026-06-04T11:56:58+00:00",
+      "message_id": "smtp-2026-06-04T11:56:57+00:00"
     }
   ]
 }
