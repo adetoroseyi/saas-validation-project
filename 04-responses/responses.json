@@ -2,14 +2,14 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "total_responses": 4,
+    "total_responses": 5,
     "classifications": {
       "interested": 0,
       "pricing_question": 0,
       "not_interested": 0,
       "unsubscribe": 2,
       "auto_reply": 0,
-      "question": 2
+      "question": 3
     }
   },
   "responses": [
@@ -52,6 +52,16 @@
       "received_date": "2026-06-04T12:46:37+00:00",
       "summary": "Hello\r\n\r\nI have now left the business.\r\n\r\nPlease forward any emails to taylor.lawson@pin-point.co.uk\r\n\r\nThank You\r\n\r\nDisclaimer\r\n\r\nThe information contained in this communication from the sender is confidential. It is intended solely for use by the recipient and others authorized",
       "thread_id": "<6a216308.f6fc7aa5.15841e.0f47@mx.google.com>"
+    },
+    {
+      "lead_id": "lead_000037",
+      "email": "abigail@citu.co.uk",
+      "company_name": "Citu",
+      "concept": "D",
+      "classification": "question",
+      "received_date": "2026-06-05T12:38:21+00:00",
+      "summary": "I have now left the company if you need any assistance, please call 0113 320 2357 or email sales@citu.co.uk.\r\n\r\nAbigail\r\n",
+      "thread_id": "<6a22ba01.df581d38.347129.80e9@mx.google.com>"
     }
   ]
 }
