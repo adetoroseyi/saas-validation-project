@@ -2,7 +2,7 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "total_sent": 152,
+    "total_sent": 177,
     "daily_counts": {
       "2026-05-29": 5,
       "2026-06-01": 25,
@@ -10,9 +10,10 @@
       "2026-06-03": 25,
       "2026-06-04": 25,
       "2026-06-05": 22,
-      "2026-06-08": 25
+      "2026-06-08": 25,
+      "2026-06-09": 25
     },
-    "last_send_timestamp": "2026-06-08T13:15:35+00:00"
+    "last_send_timestamp": "2026-06-09T11:59:35+00:00"
   },
   "sends": [
     {
@@ -1382,6 +1383,231 @@
       "subject": "Re: how much time does Finance Recruitment Partners spend on repeat tasks",
       "sent_at": "2026-06-08T13:15:35+00:00",
       "message_id": "smtp-2026-06-08T13:15:35+00:00"
+    },
+    {
+      "lead_id": "lead_000008",
+      "email": "chandran@lotusaccounting.ca",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: how much time does Lotus Accounting Professional Corporation spend on repeat tasks",
+      "sent_at": "2026-06-09T11:23:00+00:00",
+      "message_id": "smtp-2026-06-09T11:23:00+00:00"
+    },
+    {
+      "lead_id": "lead_000018",
+      "email": "paul@quicktemp.co.uk",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: question re: referral process",
+      "sent_at": "2026-06-09T11:24:32+00:00",
+      "message_id": "smtp-2026-06-09T11:24:32+00:00"
+    },
+    {
+      "lead_id": "lead_000013",
+      "email": "chanice.lewis@reedonline.co.uk",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: still doing this manually?",
+      "sent_at": "2026-06-09T11:26:06+00:00",
+      "message_id": "smtp-2026-06-09T11:26:06+00:00"
+    },
+    {
+      "lead_id": "lead_000085",
+      "email": "esther@lightupyourtalent.com",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: still doing this manually?",
+      "sent_at": "2026-06-09T11:27:37+00:00",
+      "message_id": "smtp-2026-06-09T11:27:37+00:00"
+    },
+    {
+      "lead_id": "lead_000068",
+      "email": "c.jones@oceanhome.co.uk",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: how much time does Ocean Property Lawyers, Southville spend on repeat tasks",
+      "sent_at": "2026-06-09T11:29:09+00:00",
+      "message_id": "smtp-2026-06-09T11:29:09+00:00"
+    },
+    {
+      "lead_id": "lead_000087",
+      "email": "c.magnier@qtcrecruitment.com",
+      "concept": "C",
+      "email_number": 2,
+      "subject": "Re: too many tabs?",
+      "sent_at": "2026-06-09T11:30:41+00:00",
+      "message_id": "smtp-2026-06-09T11:30:41+00:00"
+    },
+    {
+      "lead_id": "lead_000091",
+      "email": "jd@levy.eu.com",
+      "concept": "C",
+      "email_number": 2,
+      "subject": "Re: dashboard question",
+      "sent_at": "2026-06-09T11:32:12+00:00",
+      "message_id": "smtp-2026-06-09T11:32:12+00:00"
+    },
+    {
+      "lead_id": "lead_000096",
+      "email": "jos.ruiter@iqstaffing.nl",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: manual process question",
+      "sent_at": "2026-06-09T11:33:43+00:00",
+      "message_id": "smtp-2026-06-09T11:33:43+00:00"
+    },
+    {
+      "lead_id": "lead_000001",
+      "email": "hayley.perez@digitaljuicemarketing.co.uk",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: still doing this manually?",
+      "sent_at": "2026-06-09T11:35:16+00:00",
+      "message_id": "smtp-2026-06-09T11:35:16+00:00"
+    },
+    {
+      "lead_id": "lead_000065",
+      "email": "deborah.clark@newsouthlaw.co.uk",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: how much time does New South Law Limited spend on repeat tasks",
+      "sent_at": "2026-06-09T11:36:47+00:00",
+      "message_id": "smtp-2026-06-09T11:36:47+00:00"
+    },
+    {
+      "lead_id": "lead_000030",
+      "email": "renee@norwestrecruitment.com.au",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: question re: referral process",
+      "sent_at": "2026-06-09T11:38:18+00:00",
+      "message_id": "smtp-2026-06-09T11:38:18+00:00"
+    },
+    {
+      "lead_id": "lead_000078",
+      "email": "keith@nounicornyet.com",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: question re: referral process",
+      "sent_at": "2026-06-09T11:39:49+00:00",
+      "message_id": "smtp-2026-06-09T11:39:49+00:00"
+    },
+    {
+      "lead_id": "lead_000028",
+      "email": "zgrant@staffaus.com.au",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: still doing this manually?",
+      "sent_at": "2026-06-09T11:41:20+00:00",
+      "message_id": "smtp-2026-06-09T11:41:20+00:00"
+    },
+    {
+      "lead_id": "lead_000070",
+      "email": "ved@watkinssolicitors.co.uk",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: how does Watkins Solicitors find new work",
+      "sent_at": "2026-06-09T11:42:52+00:00",
+      "message_id": "smtp-2026-06-09T11:42:52+00:00"
+    },
+    {
+      "lead_id": "lead_000003",
+      "email": "george@clearadsagency.com",
+      "concept": "C",
+      "email_number": 2,
+      "subject": "Re: too many tabs?",
+      "sent_at": "2026-06-09T11:44:23+00:00",
+      "message_id": "smtp-2026-06-09T11:44:23+00:00"
+    },
+    {
+      "lead_id": "lead_000092",
+      "email": "marc@bluebirdrecruitment.com",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: how much time does Bluebird Recruitment spend on repeat tasks",
+      "sent_at": "2026-06-09T11:45:54+00:00",
+      "message_id": "smtp-2026-06-09T11:45:54+00:00"
+    },
+    {
+      "lead_id": "lead_000083",
+      "email": "michavaneeden@sterrk.nl",
+      "concept": "C",
+      "email_number": 2,
+      "subject": "Re: how many tools are you running",
+      "sent_at": "2026-06-09T11:47:25+00:00",
+      "message_id": "smtp-2026-06-09T11:47:25+00:00"
+    },
+    {
+      "lead_id": "lead_000043",
+      "email": "juan@tgslogistics.com",
+      "concept": "C",
+      "email_number": 2,
+      "subject": "Re: dashboard question",
+      "sent_at": "2026-06-09T11:48:56+00:00",
+      "message_id": "smtp-2026-06-09T11:48:56+00:00"
+    },
+    {
+      "lead_id": "lead_000076",
+      "email": "kai@merkenschoenberg.de",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: still doing this manually?",
+      "sent_at": "2026-06-09T11:50:27+00:00",
+      "message_id": "smtp-2026-06-09T11:50:27+00:00"
+    },
+    {
+      "lead_id": "lead_000026",
+      "email": "carla@farronresearch.com.au",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: lead tracking at Farron Research Group Pty Ltd Sydney",
+      "sent_at": "2026-06-09T11:51:58+00:00",
+      "message_id": "smtp-2026-06-09T11:51:58+00:00"
+    },
+    {
+      "lead_id": "lead_000017",
+      "email": "jerome.francis@thebestconnection.co.uk",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: how much time does The Best Connection - Croydon spend on repeat tasks",
+      "sent_at": "2026-06-09T11:53:30+00:00",
+      "message_id": "smtp-2026-06-09T11:53:30+00:00"
+    },
+    {
+      "lead_id": "lead_000011",
+      "email": "james.spencer@ccr.uk.com",
+      "concept": "C",
+      "email_number": 2,
+      "subject": "Re: how many tools are you running",
+      "sent_at": "2026-06-09T11:55:01+00:00",
+      "message_id": "smtp-2026-06-09T11:55:01+00:00"
+    },
+    {
+      "lead_id": "lead_000098",
+      "email": "merel@sense-recruitment.nl",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: lead tracking at SENSE Recruitment",
+      "sent_at": "2026-06-09T11:56:33+00:00",
+      "message_id": "smtp-2026-06-09T11:56:33+00:00"
+    },
+    {
+      "lead_id": "lead_000046",
+      "email": "pamelateranaj@landseaglobal.com",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: how does LandSea Global Transport and Trade B.V find new work",
+      "sent_at": "2026-06-09T11:58:04+00:00",
+      "message_id": "smtp-2026-06-09T11:58:04+00:00"
+    },
+    {
+      "lead_id": "lead_000063",
+      "email": "alec@parkpl.co",
+      "concept": "C",
+      "email_number": 2,
+      "subject": "Re: too many tabs?",
+      "sent_at": "2026-06-09T11:59:35+00:00",
+      "message_id": "smtp-2026-06-09T11:59:35+00:00"
     }
   ]
 }
