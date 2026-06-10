@@ -2,7 +2,7 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "count": 2,
+    "count": 3,
     "note": "Any email in this list is PERMANENTLY excluded from all sending. Added via unsubscribe requests, hard bounces, or manual flag. Never remove entries from this list."
   },
   "suppressed": [
@@ -15,6 +15,11 @@
       "email": "tom.schneider@wordliner.com",
       "reason": "unsubscribe_reply",
       "added": "2026-06-02T16:26:30+00:00"
+    },
+    {
+      "email": "donnawilson@michaelpage.com",
+      "reason": "unsubscribe_reply",
+      "added": "2026-06-10T12:56:50+00:00"
     }
   ]
 }

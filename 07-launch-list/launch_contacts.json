@@ -4,7 +4,7 @@
     "project": "T&O Ventures SaaS Validation",
     "description": "Master launch list. Every contact reached during validation is saved here automatically when Email 1 is sent. Enriched with response data when they reply. Ready for product launch outreach - do not contact anyone where do_not_contact is true.",
     "total_contacts": 98,
-    "last_updated": "2026-06-05T12:38:20+00:00"
+    "last_updated": "2026-06-10T12:56:50+00:00"
   },
   "contacts": [
     {
@@ -1562,10 +1562,10 @@
       "concept_tested": "B",
       "concept_name": "LeadPulse",
       "interest_level": "unknown",
-      "response_type": null,
-      "response_notes": null,
+      "response_type": "unsubscribe",
+      "response_notes": "STOP\r\n\r\n\r\nDonna Wilson\r\nEA to Dominic Redmond CIO and Olly Harris Global MD\r\nPageGroup\r\n80 Strand, London, WC2R 0DT\r\nT: +44 20 7269 2415\r\nM: +44 783 343 5660\r\nE: donnawilson@michaelpage.com\r\nW: www.michaelpage.co.uk\r\nFind our company on:\r\nAt PageGroup we don't just accept differe",
       "added_to_list_date": "2026-06-03T13:15:34+00:00",
-      "last_interaction_date": "2026-06-03T13:15:34+00:00",
+      "last_interaction_date": "2026-06-10T12:56:50+00:00",
       "launch_segment": null,
       "do_not_contact": false
     },

@@ -2,12 +2,12 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "total_responses": 5,
+    "total_responses": 6,
     "classifications": {
       "interested": 0,
       "pricing_question": 0,
       "not_interested": 0,
-      "unsubscribe": 2,
+      "unsubscribe": 3,
       "auto_reply": 0,
       "question": 3
     }
@@ -62,6 +62,16 @@
       "received_date": "2026-06-05T12:38:21+00:00",
       "summary": "I have now left the company if you need any assistance, please call 0113 320 2357 or email sales@citu.co.uk.\r\n\r\nAbigail\r\n",
       "thread_id": "<6a22ba01.df581d38.347129.80e9@mx.google.com>"
+    },
+    {
+      "lead_id": "lead_000086",
+      "email": "donnawilson@michaelpage.com",
+      "company_name": "Michael Page | Recruitment Agency (permanent & interim)",
+      "concept": "B",
+      "classification": "unsubscribe",
+      "received_date": "2026-06-10T12:56:50+00:00",
+      "summary": "STOP\r\n\r\n\r\nDonna Wilson\r\nEA to Dominic Redmond CIO and Olly Harris Global MD\r\nPageGroup\r\n80 Strand, London, WC2R 0DT\r\nT: +44 20 7269 2415\r\nM: +44 783 343 5660\r\nE: donnawilson@michaelpage.com\r\nW: www.michaelpage.co.uk\r\nFind our company on:\r\nAt PageGroup we don't just accept differe",
+      "thread_id": "<6a29519f.738433cb.1d4dab.06c9@mx.google.com>"
     }
   ]
 }

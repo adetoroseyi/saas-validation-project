@@ -1812,10 +1812,10 @@
       "employee_estimate": "5-20",
       "source": "google_maps_linkedin",
       "sourced_date": "2026-05-11",
-      "status": "contacted",
+      "status": "unsubscribed",
       "emails_sent": 2,
       "last_email_date": "2026-06-10T11:59:28+00:00",
-      "response_status": null,
+      "response_status": "unsubscribe",
       "notes": "",
       "id": "lead_000086",
       "concept_assigned": "B"
