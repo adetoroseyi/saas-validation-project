@@ -2,7 +2,7 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "total_sent": 177,
+    "total_sent": 192,
     "daily_counts": {
       "2026-05-29": 5,
       "2026-06-01": 25,
@@ -11,9 +11,10 @@
       "2026-06-04": 25,
       "2026-06-05": 22,
       "2026-06-08": 25,
-      "2026-06-09": 25
+      "2026-06-09": 25,
+      "2026-06-10": 15
     },
-    "last_send_timestamp": "2026-06-09T11:59:35+00:00"
+    "last_send_timestamp": "2026-06-10T12:04:04+00:00"
   },
   "sends": [
     {
@@ -1608,6 +1609,141 @@
       "subject": "Re: too many tabs?",
       "sent_at": "2026-06-09T11:59:35+00:00",
       "message_id": "smtp-2026-06-09T11:59:35+00:00"
+    },
+    {
+      "lead_id": "lead_000095",
+      "email": "barbara@adamsrecruitment.com",
+      "concept": "C",
+      "email_number": 2,
+      "subject": "Re: how many tools are you running",
+      "sent_at": "2026-06-10T11:42:41+00:00",
+      "message_id": "smtp-2026-06-10T11:42:41+00:00"
+    },
+    {
+      "lead_id": "lead_000044",
+      "email": "hf.ye@ctsfreight.com",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: how much time does CTS International Logistics (Netherlands) BV spend on repeat tasks",
+      "sent_at": "2026-06-10T11:44:12+00:00",
+      "message_id": "smtp-2026-06-10T11:44:12+00:00"
+    },
+    {
+      "lead_id": "lead_000032",
+      "email": "elissa@curis.com.au",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: how much time does Curis Recruitment spend on repeat tasks",
+      "sent_at": "2026-06-10T11:45:44+00:00",
+      "message_id": "smtp-2026-06-10T11:45:44+00:00"
+    },
+    {
+      "lead_id": "lead_000062",
+      "email": "isabella@iqrealestatellc.com",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: lead tracking at IQ Real Estate, LLC",
+      "sent_at": "2026-06-10T11:47:15+00:00",
+      "message_id": "smtp-2026-06-10T11:47:15+00:00"
+    },
+    {
+      "lead_id": "lead_000012",
+      "email": "jurai.sveda@driversdirect.co.uk",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: manual process question",
+      "sent_at": "2026-06-10T11:48:47+00:00",
+      "message_id": "smtp-2026-06-10T11:48:47+00:00"
+    },
+    {
+      "lead_id": "lead_000024",
+      "email": "cameron.tovey@apm.net.au",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: manual process question",
+      "sent_at": "2026-06-10T11:50:18+00:00",
+      "message_id": "smtp-2026-06-10T11:50:18+00:00"
+    },
+    {
+      "lead_id": "lead_000097",
+      "email": "max.vandenbergh@stroomrecruitment.com",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: still doing this manually?",
+      "sent_at": "2026-06-10T11:51:50+00:00",
+      "message_id": "smtp-2026-06-10T11:51:50+00:00"
+    },
+    {
+      "lead_id": "lead_000081",
+      "email": "dennis.walter@profitseiten.de",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: manual process question",
+      "sent_at": "2026-06-10T11:53:21+00:00",
+      "message_id": "smtp-2026-06-10T11:53:21+00:00"
+    },
+    {
+      "lead_id": "lead_000057",
+      "email": "ivan@pristinepm.com",
+      "concept": "A",
+      "email_number": 2,
+      "subject": "Re: compliance gap",
+      "sent_at": "2026-06-10T11:54:54+00:00",
+      "message_id": "smtp-2026-06-10T11:54:54+00:00"
+    },
+    {
+      "lead_id": "lead_000082",
+      "email": "tobias.zumbuelt@advalyze.de",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: how does advalyze GmbH find new work",
+      "sent_at": "2026-06-10T11:56:25+00:00",
+      "message_id": "smtp-2026-06-10T11:56:25+00:00"
+    },
+    {
+      "lead_id": "lead_000090",
+      "email": "derek.barnick@roberthalf.com",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: question re: referral process",
+      "sent_at": "2026-06-10T11:57:56+00:00",
+      "message_id": "smtp-2026-06-10T11:57:56+00:00"
+    },
+    {
+      "lead_id": "lead_000086",
+      "email": "donnawilson@michaelpage.com",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: lead tracking at Michael Page | Recruitment Agency (permanent & interim)",
+      "sent_at": "2026-06-10T11:59:28+00:00",
+      "message_id": "smtp-2026-06-10T11:59:28+00:00"
+    },
+    {
+      "lead_id": "lead_000020",
+      "email": "nicole.taggart@strong-group.co.uk",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: how much time does Strong Recruitment Group spend on repeat tasks",
+      "sent_at": "2026-06-10T12:01:01+00:00",
+      "message_id": "smtp-2026-06-10T12:01:01+00:00"
+    },
+    {
+      "lead_id": "lead_000088",
+      "email": "m.flohil@morganrecruitmentgroup.com",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: still doing this manually?",
+      "sent_at": "2026-06-10T12:02:33+00:00",
+      "message_id": "smtp-2026-06-10T12:02:33+00:00"
+    },
+    {
+      "lead_id": "lead_000004",
+      "email": "paul@smartcow.co.uk",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: still doing this manually?",
+      "sent_at": "2026-06-10T12:04:04+00:00",
+      "message_id": "smtp-2026-06-10T12:04:04+00:00"
     }
   ]
 }
