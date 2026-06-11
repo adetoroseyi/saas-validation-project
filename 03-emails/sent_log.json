@@ -2,7 +2,7 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "total_sent": 192,
+    "total_sent": 217,
     "daily_counts": {
       "2026-05-29": 5,
       "2026-06-01": 25,
@@ -12,9 +12,10 @@
       "2026-06-05": 22,
       "2026-06-08": 25,
       "2026-06-09": 25,
-      "2026-06-10": 15
+      "2026-06-10": 15,
+      "2026-06-11": 25
     },
-    "last_send_timestamp": "2026-06-10T12:04:04+00:00"
+    "last_send_timestamp": "2026-06-11T12:50:45+00:00"
   },
   "sends": [
     {
@@ -1744,6 +1745,231 @@
       "subject": "Re: still doing this manually?",
       "sent_at": "2026-06-10T12:04:04+00:00",
       "message_id": "smtp-2026-06-10T12:04:04+00:00"
+    },
+    {
+      "lead_id": "lead_000117",
+      "email": "herbert.kanengoni@plumlife.co.uk",
+      "concept": "A",
+      "email_number": 1,
+      "subject": "compliance gap",
+      "sent_at": "2026-06-11T12:14:12+00:00",
+      "message_id": "smtp-2026-06-11T12:14:10+00:00"
+    },
+    {
+      "lead_id": "lead_000039",
+      "email": "daniel.wright@priestleyconstruction.co.uk",
+      "concept": "C",
+      "email_number": 3,
+      "subject": "Re: too many tabs?",
+      "sent_at": "2026-06-11T12:15:43+00:00",
+      "message_id": "smtp-2026-06-11T12:15:43+00:00"
+    },
+    {
+      "lead_id": "lead_000127",
+      "email": "arwel.rees@belvoir.co.uk",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "dashboard question",
+      "sent_at": "2026-06-11T12:17:15+00:00",
+      "message_id": "smtp-2026-06-11T12:17:15+00:00"
+    },
+    {
+      "lead_id": "lead_000005",
+      "email": "samantha@murphychung.ca",
+      "concept": "D",
+      "email_number": 3,
+      "subject": "Re: how much time does Murphy & Chung Professional Corporation spend on repeat tasks",
+      "sent_at": "2026-06-11T12:18:46+00:00",
+      "message_id": "smtp-2026-06-11T12:18:46+00:00"
+    },
+    {
+      "lead_id": "lead_000126",
+      "email": "dean@parkandbailey.co.uk",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "question re: referral process",
+      "sent_at": "2026-06-11T12:20:18+00:00",
+      "message_id": "smtp-2026-06-11T12:20:17+00:00"
+    },
+    {
+      "lead_id": "lead_000119",
+      "email": "iain.dawson@pearsonferrier.co.uk",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "how many tools are you running",
+      "sent_at": "2026-06-11T12:21:49+00:00",
+      "message_id": "smtp-2026-06-11T12:21:49+00:00"
+    },
+    {
+      "lead_id": "lead_000105",
+      "email": "marloes@smart-talent.nl",
+      "concept": "A",
+      "email_number": 1,
+      "subject": "compliance gap",
+      "sent_at": "2026-06-11T12:23:21+00:00",
+      "message_id": "smtp-2026-06-11T12:23:20+00:00"
+    },
+    {
+      "lead_id": "lead_000120",
+      "email": "tracy@abodeltd.co.uk",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "manual process question",
+      "sent_at": "2026-06-11T12:24:52+00:00",
+      "message_id": "smtp-2026-06-11T12:24:52+00:00"
+    },
+    {
+      "lead_id": "lead_000129",
+      "email": "sara@walterandmair.co.uk",
+      "concept": "A",
+      "email_number": 1,
+      "subject": "compliance gap",
+      "sent_at": "2026-06-11T12:26:23+00:00",
+      "message_id": "smtp-2026-06-11T12:26:23+00:00"
+    },
+    {
+      "lead_id": "lead_000052",
+      "email": "tboesch@redtransportlogistics.com",
+      "concept": "D",
+      "email_number": 3,
+      "subject": "Re: still doing this manually?",
+      "sent_at": "2026-06-11T12:27:54+00:00",
+      "message_id": "smtp-2026-06-11T12:27:54+00:00"
+    },
+    {
+      "lead_id": "lead_000048",
+      "email": "ruard@logistiek24.nl",
+      "concept": "D",
+      "email_number": 3,
+      "subject": "Re: manual process question",
+      "sent_at": "2026-06-11T12:29:25+00:00",
+      "message_id": "smtp-2026-06-11T12:29:25+00:00"
+    },
+    {
+      "lead_id": "lead_000114",
+      "email": "javaid@deltaforcegroup.co.uk",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "question re: referral process",
+      "sent_at": "2026-06-11T12:30:57+00:00",
+      "message_id": "smtp-2026-06-11T12:30:57+00:00"
+    },
+    {
+      "lead_id": "lead_000040",
+      "email": "andy.lynch@lynchrenovations.co.uk",
+      "concept": "D",
+      "email_number": 3,
+      "subject": "Re: still doing this manually?",
+      "sent_at": "2026-06-11T12:32:29+00:00",
+      "message_id": "smtp-2026-06-11T12:32:29+00:00"
+    },
+    {
+      "lead_id": "lead_000111",
+      "email": "stuart.miwfm@kdgproperty.com",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "too many tabs?",
+      "sent_at": "2026-06-11T12:34:00+00:00",
+      "message_id": "smtp-2026-06-11T12:34:00+00:00"
+    },
+    {
+      "lead_id": "lead_000101",
+      "email": "carmen@doen-r.nl",
+      "concept": "A",
+      "email_number": 1,
+      "subject": "audit prep at doen'r",
+      "sent_at": "2026-06-11T12:35:31+00:00",
+      "message_id": "smtp-2026-06-11T12:35:31+00:00"
+    },
+    {
+      "lead_id": "lead_000058",
+      "email": "joe@nadlanmanagement.com",
+      "concept": "B",
+      "email_number": 3,
+      "subject": "Re: how does Nadlan Management find new work",
+      "sent_at": "2026-06-11T12:37:02+00:00",
+      "message_id": "smtp-2026-06-11T12:37:02+00:00"
+    },
+    {
+      "lead_id": "lead_000109",
+      "email": "adam@pollardmachin.co.uk",
+      "concept": "A",
+      "email_number": 1,
+      "subject": "a risk question",
+      "sent_at": "2026-06-11T12:38:34+00:00",
+      "message_id": "smtp-2026-06-11T12:38:33+00:00"
+    },
+    {
+      "lead_id": "lead_000019",
+      "email": "ash.kohli@hcpautomotive.com",
+      "concept": "C",
+      "email_number": 3,
+      "subject": "Re: dashboard question",
+      "sent_at": "2026-06-11T12:40:05+00:00",
+      "message_id": "smtp-2026-06-11T12:40:05+00:00"
+    },
+    {
+      "lead_id": "lead_000130",
+      "email": "amyh@paulmeakin.co.uk",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "how does Paul Meakin Estate Agents find new work",
+      "sent_at": "2026-06-11T12:41:37+00:00",
+      "message_id": "smtp-2026-06-11T12:41:36+00:00"
+    },
+    {
+      "lead_id": "lead_000006",
+      "email": "kevin.d.ball@ebdcas.com",
+      "concept": "B",
+      "email_number": 3,
+      "subject": "Re: question re: referral process",
+      "sent_at": "2026-06-11T12:43:08+00:00",
+      "message_id": "smtp-2026-06-11T12:43:08+00:00"
+    },
+    {
+      "lead_id": "lead_000022",
+      "email": "yogi@idriverecruitment.co.uk",
+      "concept": "B",
+      "email_number": 3,
+      "subject": "Re: how does Idrive Recruitment Ltd find new work",
+      "sent_at": "2026-06-11T12:44:39+00:00",
+      "message_id": "smtp-2026-06-11T12:44:39+00:00"
+    },
+    {
+      "lead_id": "lead_000128",
+      "email": "ilianna.yiannakou@streetsahead.info",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "how much time does Streets Ahead Estate Agents spend on repeat tasks",
+      "sent_at": "2026-06-11T12:46:10+00:00",
+      "message_id": "smtp-2026-06-11T12:46:10+00:00"
+    },
+    {
+      "lead_id": "lead_000123",
+      "email": "lee.hounslow@connells.co.uk",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "too many tabs?",
+      "sent_at": "2026-06-11T12:47:42+00:00",
+      "message_id": "smtp-2026-06-11T12:47:41+00:00"
+    },
+    {
+      "lead_id": "lead_000059",
+      "email": "leticia@terryrealtyteam.com",
+      "concept": "C",
+      "email_number": 3,
+      "subject": "Re: how many tools are you running",
+      "sent_at": "2026-06-11T12:49:13+00:00",
+      "message_id": "smtp-2026-06-11T12:49:13+00:00"
+    },
+    {
+      "lead_id": "lead_000124",
+      "email": "greg.lewis@home4.co.uk",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "still doing this manually?",
+      "sent_at": "2026-06-11T12:50:45+00:00",
+      "message_id": "smtp-2026-06-11T12:50:44+00:00"
     }
   ]
 }
