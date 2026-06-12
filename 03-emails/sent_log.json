@@ -2,7 +2,7 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "total_sent": 217,
+    "total_sent": 242,
     "daily_counts": {
       "2026-05-29": 5,
       "2026-06-01": 25,
@@ -13,9 +13,10 @@
       "2026-06-08": 25,
       "2026-06-09": 25,
       "2026-06-10": 15,
-      "2026-06-11": 25
+      "2026-06-11": 25,
+      "2026-06-12": 25
     },
-    "last_send_timestamp": "2026-06-11T12:50:45+00:00"
+    "last_send_timestamp": "2026-06-12T12:24:44+00:00"
   },
   "sends": [
     {
@@ -1970,6 +1971,231 @@
       "subject": "still doing this manually?",
       "sent_at": "2026-06-11T12:50:45+00:00",
       "message_id": "smtp-2026-06-11T12:50:44+00:00"
+    },
+    {
+      "lead_id": "lead_000106",
+      "email": "franklin@hnr.eu",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "how does HNR | Het Nieuwe Recruitment find new work",
+      "sent_at": "2026-06-12T11:48:10+00:00",
+      "message_id": "smtp-2026-06-12T11:48:09+00:00"
+    },
+    {
+      "lead_id": "lead_000093",
+      "email": "kubilay@ravecruitment.com",
+      "concept": "D",
+      "email_number": 3,
+      "subject": "Re: manual process question",
+      "sent_at": "2026-06-12T11:49:41+00:00",
+      "message_id": "smtp-2026-06-12T11:49:41+00:00"
+    },
+    {
+      "lead_id": "lead_000071",
+      "email": "yjuddoo@insight-law.co.uk",
+      "concept": "C",
+      "email_number": 3,
+      "subject": "Re: how many tools are you running",
+      "sent_at": "2026-06-12T11:51:12+00:00",
+      "message_id": "smtp-2026-06-12T11:51:12+00:00"
+    },
+    {
+      "lead_id": "lead_000125",
+      "email": "garryn@elitesalesgeneration.com",
+      "concept": "A",
+      "email_number": 1,
+      "subject": "audit prep at Elite Sales & Lettings Ltd",
+      "sent_at": "2026-06-12T11:52:43+00:00",
+      "message_id": "smtp-2026-06-12T11:52:43+00:00"
+    },
+    {
+      "lead_id": "lead_000133",
+      "email": "debbie.ragan@martinco.com",
+      "concept": "A",
+      "email_number": 1,
+      "subject": "a risk question",
+      "sent_at": "2026-06-12T11:54:15+00:00",
+      "message_id": "smtp-2026-06-12T11:54:15+00:00"
+    },
+    {
+      "lead_id": "lead_000112",
+      "email": "lharris@livermores.co.uk",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "still doing this manually?",
+      "sent_at": "2026-06-12T11:55:46+00:00",
+      "message_id": "smtp-2026-06-12T11:55:46+00:00"
+    },
+    {
+      "lead_id": "lead_000102",
+      "email": "n.splinter@deen.eu",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "question re: referral process",
+      "sent_at": "2026-06-12T11:57:18+00:00",
+      "message_id": "smtp-2026-06-12T11:57:18+00:00"
+    },
+    {
+      "lead_id": "lead_000108",
+      "email": "kdenning@andrewsonline.co.uk",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "manual process question",
+      "sent_at": "2026-06-12T11:58:49+00:00",
+      "message_id": "smtp-2026-06-12T11:58:49+00:00"
+    },
+    {
+      "lead_id": "lead_000121",
+      "email": "pini@amcocommercial.co.uk",
+      "concept": "A",
+      "email_number": 1,
+      "subject": "a risk question",
+      "sent_at": "2026-06-12T12:00:21+00:00",
+      "message_id": "smtp-2026-06-12T12:00:21+00:00"
+    },
+    {
+      "lead_id": "lead_000113",
+      "email": "kristy@parrisresidential.co.uk",
+      "concept": "A",
+      "email_number": 1,
+      "subject": "audit prep at Parris Residential",
+      "sent_at": "2026-06-12T12:01:53+00:00",
+      "message_id": "smtp-2026-06-12T12:01:53+00:00"
+    },
+    {
+      "lead_id": "lead_000060",
+      "email": "marta@guestable.com",
+      "concept": "D",
+      "email_number": 3,
+      "subject": "Re: manual process question",
+      "sent_at": "2026-06-12T12:03:24+00:00",
+      "message_id": "smtp-2026-06-12T12:03:24+00:00"
+    },
+    {
+      "lead_id": "lead_000035",
+      "email": "harry.pickles@bgallagherconstruction.co.uk",
+      "concept": "C",
+      "email_number": 3,
+      "subject": "Re: how many tools are you running",
+      "sent_at": "2026-06-12T12:04:56+00:00",
+      "message_id": "smtp-2026-06-12T12:04:56+00:00"
+    },
+    {
+      "lead_id": "lead_000118",
+      "email": "sarahrushton@jordanfishwick.co.uk",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "how does Jordan Fishwick find new work",
+      "sent_at": "2026-06-12T12:06:28+00:00",
+      "message_id": "smtp-2026-06-12T12:06:27+00:00"
+    },
+    {
+      "lead_id": "lead_000103",
+      "email": "annika@mrwork.nl",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "dashboard question",
+      "sent_at": "2026-06-12T12:07:59+00:00",
+      "message_id": "smtp-2026-06-12T12:07:59+00:00"
+    },
+    {
+      "lead_id": "lead_000079",
+      "email": "juergen.zoellner@berliner-digitalbuero.de",
+      "concept": "C",
+      "email_number": 3,
+      "subject": "Re: dashboard question",
+      "sent_at": "2026-06-12T12:09:31+00:00",
+      "message_id": "smtp-2026-06-12T12:09:31+00:00"
+    },
+    {
+      "lead_id": "lead_000104",
+      "email": "mannfred@wr.nl",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "how much time does WR.nl spend on repeat tasks",
+      "sent_at": "2026-06-12T12:11:02+00:00",
+      "message_id": "smtp-2026-06-12T12:11:02+00:00"
+    },
+    {
+      "lead_id": "lead_000107",
+      "email": "jack@paul-oshea.co.uk",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "how many tools are you running",
+      "sent_at": "2026-06-12T12:12:34+00:00",
+      "message_id": "smtp-2026-06-12T12:12:33+00:00"
+    },
+    {
+      "lead_id": "lead_000100",
+      "email": "tycho@vonq.com",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "still doing this manually?",
+      "sent_at": "2026-06-12T12:14:05+00:00",
+      "message_id": "smtp-2026-06-12T12:14:05+00:00"
+    },
+    {
+      "lead_id": "lead_000099",
+      "email": "jaap@recruitastudent.nl",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "too many tabs?",
+      "sent_at": "2026-06-12T12:15:37+00:00",
+      "message_id": "smtp-2026-06-12T12:15:36+00:00"
+    },
+    {
+      "lead_id": "lead_000131",
+      "email": "tomhughes@johndallas.co.uk",
+      "concept": "C",
+      "email_number": 1,
+      "subject": "how many tools are you running",
+      "sent_at": "2026-06-12T12:17:08+00:00",
+      "message_id": "smtp-2026-06-12T12:17:08+00:00"
+    },
+    {
+      "lead_id": "lead_000050",
+      "email": "cedric.miller@steinweg.com",
+      "concept": "B",
+      "email_number": 3,
+      "subject": "Re: lead tracking at C. Steinweg – Handelsveem B.V. BEATRIX TERMINAL",
+      "sent_at": "2026-06-12T12:18:39+00:00",
+      "message_id": "smtp-2026-06-12T12:18:39+00:00"
+    },
+    {
+      "lead_id": "lead_000116",
+      "email": "andrew@bexleyhomes.co.uk",
+      "concept": "D",
+      "email_number": 1,
+      "subject": "how much time does BEXLEY HOMES spend on repeat tasks",
+      "sent_at": "2026-06-12T12:20:11+00:00",
+      "message_id": "smtp-2026-06-12T12:20:10+00:00"
+    },
+    {
+      "lead_id": "lead_000015",
+      "email": "avi.samra@driverhire.co.uk",
+      "concept": "C",
+      "email_number": 3,
+      "subject": "Re: too many tabs?",
+      "sent_at": "2026-06-12T12:21:42+00:00",
+      "message_id": "smtp-2026-06-12T12:21:42+00:00"
+    },
+    {
+      "lead_id": "lead_000122",
+      "email": "ellie.leadbetter@shipways.co.uk",
+      "concept": "B",
+      "email_number": 1,
+      "subject": "lead tracking at Shipways Estate Agents Great Barr",
+      "sent_at": "2026-06-12T12:23:13+00:00",
+      "message_id": "smtp-2026-06-12T12:23:13+00:00"
+    },
+    {
+      "lead_id": "lead_000041",
+      "email": "louise.chambers@bagnalls.co.uk",
+      "concept": "D",
+      "email_number": 3,
+      "subject": "Re: how much time does Bagnalls Painting & Decorating Contractors spend on repeat tasks",
+      "sent_at": "2026-06-12T12:24:44+00:00",
+      "message_id": "smtp-2026-06-12T12:24:44+00:00"
     }
   ]
 }
