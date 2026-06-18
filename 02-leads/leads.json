@@ -195,10 +195,10 @@
       "employee_estimate": "20-100",
       "source": "google_maps_linkedin",
       "sourced_date": "2026-04-13",
-      "status": "contacted",
+      "status": "unsubscribed",
       "emails_sent": 3,
       "last_email_date": "2026-06-18T12:11:24+00:00",
-      "response_status": null,
+      "response_status": "unsubscribe",
       "notes": "",
       "id": "lead_000009",
       "concept_assigned": "D"

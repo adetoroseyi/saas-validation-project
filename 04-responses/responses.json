@@ -2,14 +2,14 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "total_responses": 6,
+    "total_responses": 8,
     "classifications": {
       "interested": 0,
       "pricing_question": 0,
       "not_interested": 0,
-      "unsubscribe": 3,
+      "unsubscribe": 4,
       "auto_reply": 0,
-      "question": 3
+      "question": 4
     }
   },
   "responses": [
@@ -72,6 +72,26 @@
       "received_date": "2026-06-10T12:56:50+00:00",
       "summary": "STOP\r\n\r\n\r\nDonna Wilson\r\nEA to Dominic Redmond CIO and Olly Harris Global MD\r\nPageGroup\r\n80 Strand, London, WC2R 0DT\r\nT: +44 20 7269 2415\r\nM: +44 783 343 5660\r\nE: donnawilson@michaelpage.com\r\nW: www.michaelpage.co.uk\r\nFind our company on:\r\nAt PageGroup we don't just accept differe",
       "thread_id": "<6a29519f.738433cb.1d4dab.06c9@mx.google.com>"
+    },
+    {
+      "lead_id": "lead_000009",
+      "email": "veronica@accountor.ca",
+      "company_name": "Accountor CPA Accounting Bookkeeping and Tax Experts",
+      "concept": "D",
+      "classification": "question",
+      "received_date": "2026-06-18T15:26:29+00:00",
+      "summary": "<div dir=\"ltr\"><div><p>Thank you for your email.</p>\r\n<p>Please note that this email address is no longer monitored. <br><br>For any client matters, questions, or follow-up requests, please contact Diane Lyall directly at <strong><a rel=\"noopener\">diane@accountor.ca</a></strong><",
+      "thread_id": "<CAEgGdEgJ+MVsOnZdySMQX_HhQPAqwknUeaK+8cv+WWLXWdADyQ@mail.gmail.com>"
+    },
+    {
+      "lead_id": "lead_000009",
+      "email": "veronica@accountor.ca",
+      "company_name": "Accountor CPA Accounting Bookkeeping and Tax Experts",
+      "concept": "D",
+      "classification": "unsubscribe",
+      "received_date": "2026-06-18T15:26:38+00:00",
+      "summary": "STOP\r\n\r\n*Accountor CPA Professional Corporation*\r\n\r\n\r\nwww.accountor.ca  <http://www.accountor.ca/>  |  Email:\r\nveronica@accountor.ca\r\nToll Free: 1-800-801-9931 ext 20  | Local: 416-646-2580 ext 20\r\n\r\n*The best compliment we can receive is a business client referral!*\r\n\r\nDisclaime",
+      "thread_id": "<6a33e06b.3b3b50dc.13de43.75ee@mx.google.com>"
     }
   ]
 }

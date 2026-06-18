@@ -2,7 +2,7 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "count": 3,
+    "count": 4,
     "note": "Any email in this list is PERMANENTLY excluded from all sending. Added via unsubscribe requests, hard bounces, or manual flag. Never remove entries from this list."
   },
   "suppressed": [
@@ -20,6 +20,11 @@
       "email": "donnawilson@michaelpage.com",
       "reason": "unsubscribe_reply",
       "added": "2026-06-10T12:56:50+00:00"
+    },
+    {
+      "email": "veronica@accountor.ca",
+      "reason": "unsubscribe_reply",
+      "added": "2026-06-18T15:26:38+00:00"
     }
   ]
 }
