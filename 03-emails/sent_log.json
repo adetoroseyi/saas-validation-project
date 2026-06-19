@@ -2,7 +2,7 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "total_sent": 342,
+    "total_sent": 354,
     "daily_counts": {
       "2026-05-29": 5,
       "2026-06-01": 25,
@@ -18,9 +18,10 @@
       "2026-06-15": 25,
       "2026-06-16": 25,
       "2026-06-17": 25,
-      "2026-06-18": 25
+      "2026-06-18": 25,
+      "2026-06-19": 12
     },
-    "last_send_timestamp": "2026-06-18T12:31:14+00:00"
+    "last_send_timestamp": "2026-06-19T12:30:08+00:00"
   },
   "sends": [
     {
@@ -3100,6 +3101,114 @@
       "subject": "Re: too many tabs?",
       "sent_at": "2026-06-18T12:31:14+00:00",
       "message_id": "smtp-2026-06-18T12:31:14+00:00"
+    },
+    {
+      "lead_id": "lead_000063",
+      "email": "alec@parkpl.co",
+      "concept": "C",
+      "email_number": 3,
+      "subject": "Re: too many tabs?",
+      "sent_at": "2026-06-19T12:13:25+00:00",
+      "message_id": "smtp-2026-06-19T12:13:25+00:00"
+    },
+    {
+      "lead_id": "lead_000098",
+      "email": "merel@sense-recruitment.nl",
+      "concept": "B",
+      "email_number": 3,
+      "subject": "Re: lead tracking at SENSE Recruitment",
+      "sent_at": "2026-06-19T12:14:56+00:00",
+      "message_id": "smtp-2026-06-19T12:14:56+00:00"
+    },
+    {
+      "lead_id": "lead_000115",
+      "email": "glenn.ackroyd@ewemove.com",
+      "concept": "C",
+      "email_number": 2,
+      "subject": "Re: dashboard question",
+      "sent_at": "2026-06-19T12:16:27+00:00",
+      "message_id": "smtp-2026-06-19T12:16:27+00:00"
+    },
+    {
+      "lead_id": "lead_000034",
+      "email": "pj@pjconsulting.com.au",
+      "concept": "B",
+      "email_number": 3,
+      "subject": "Re: how does P.J. Recruitment & Executive Search find new work",
+      "sent_at": "2026-06-19T12:17:58+00:00",
+      "message_id": "smtp-2026-06-19T12:17:58+00:00"
+    },
+    {
+      "lead_id": "lead_000092",
+      "email": "marc@bluebirdrecruitment.com",
+      "concept": "D",
+      "email_number": 3,
+      "subject": "Re: how much time does Bluebird Recruitment spend on repeat tasks",
+      "sent_at": "2026-06-19T12:19:30+00:00",
+      "message_id": "smtp-2026-06-19T12:19:30+00:00"
+    },
+    {
+      "lead_id": "lead_000110",
+      "email": "ellie@berrypropertyservices.co.uk",
+      "concept": "B",
+      "email_number": 2,
+      "subject": "Re: lead tracking at Berry Property Services",
+      "sent_at": "2026-06-19T12:21:01+00:00",
+      "message_id": "smtp-2026-06-19T12:21:01+00:00"
+    },
+    {
+      "lead_id": "lead_000062",
+      "email": "isabella@iqrealestatellc.com",
+      "concept": "B",
+      "email_number": 3,
+      "subject": "Re: lead tracking at IQ Real Estate, LLC",
+      "sent_at": "2026-06-19T12:22:32+00:00",
+      "message_id": "smtp-2026-06-19T12:22:32+00:00"
+    },
+    {
+      "lead_id": "lead_000026",
+      "email": "carla@farronresearch.com.au",
+      "concept": "B",
+      "email_number": 3,
+      "subject": "Re: lead tracking at Farron Research Group Pty Ltd Sydney",
+      "sent_at": "2026-06-19T12:24:03+00:00",
+      "message_id": "smtp-2026-06-19T12:24:03+00:00"
+    },
+    {
+      "lead_id": "lead_000095",
+      "email": "barbara@adamsrecruitment.com",
+      "concept": "C",
+      "email_number": 3,
+      "subject": "Re: how many tools are you running",
+      "sent_at": "2026-06-19T12:25:34+00:00",
+      "message_id": "smtp-2026-06-19T12:25:34+00:00"
+    },
+    {
+      "lead_id": "lead_000084",
+      "email": "yuliia@src-search.com",
+      "concept": "D",
+      "email_number": 3,
+      "subject": "Re: manual process question",
+      "sent_at": "2026-06-19T12:27:06+00:00",
+      "message_id": "smtp-2026-06-19T12:27:06+00:00"
+    },
+    {
+      "lead_id": "lead_000132",
+      "email": "ryan.milson@moverevolution.com",
+      "concept": "D",
+      "email_number": 2,
+      "subject": "Re: manual process question",
+      "sent_at": "2026-06-19T12:28:37+00:00",
+      "message_id": "smtp-2026-06-19T12:28:37+00:00"
+    },
+    {
+      "lead_id": "lead_000036",
+      "email": "michelle.downs@pqs-survey.co.uk",
+      "concept": "D",
+      "email_number": 3,
+      "subject": "Re: manual process question",
+      "sent_at": "2026-06-19T12:30:08+00:00",
+      "message_id": "smtp-2026-06-19T12:30:08+00:00"
     }
   ]
 }
