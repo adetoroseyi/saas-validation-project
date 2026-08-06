@@ -2274,10 +2274,10 @@
       "employee_estimate": "20-100",
       "source": "google_maps_linkedin",
       "sourced_date": "2026-06-11",
-      "status": "contacted",
+      "status": "responded",
       "emails_sent": 2,
       "last_email_date": "2026-06-15T14:57:23+00:00",
-      "response_status": null,
+      "response_status": "question",
       "notes": "",
       "id": "lead_000108",
       "concept_assigned": "D"

@@ -2,14 +2,14 @@
   "metadata": {
     "created": "2026-04-10",
     "schema_version": "1.0",
-    "total_responses": 8,
+    "total_responses": 9,
     "classifications": {
       "interested": 0,
       "pricing_question": 0,
       "not_interested": 0,
       "unsubscribe": 4,
       "auto_reply": 0,
-      "question": 4
+      "question": 5
     }
   },
   "responses": [
@@ -92,6 +92,16 @@
       "received_date": "2026-06-18T15:26:38+00:00",
       "summary": "STOP\r\n\r\n*Accountor CPA Professional Corporation*\r\n\r\n\r\nwww.accountor.ca  <http://www.accountor.ca/>  |  Email:\r\nveronica@accountor.ca\r\nToll Free: 1-800-801-9931 ext 20  | Local: 416-646-2580 ext 20\r\n\r\n*The best compliment we can receive is a business client referral!*\r\n\r\nDisclaime",
       "thread_id": "<6a33e06b.3b3b50dc.13de43.75ee@mx.google.com>"
+    },
+    {
+      "lead_id": "lead_000108",
+      "email": "kdenning@AndrewsOnline.co.uk",
+      "company_name": "Andrews Wallington",
+      "concept": "D",
+      "classification": "question",
+      "received_date": "2026-08-06T14:09:22+00:00",
+      "summary": "Thank you for your email.\r\n\r\nPlease note that I'm currently out of the office.\r\n\r\nIf your enquiry is urgent, please contact our main email address bristolbathnewhomes@andrewsonline.co.uk and a member of the team will contact you as soon as possible.\r\n\r\nKind Regards\r\n\r\nKate\r\n\r\n\r\nK",
+      "thread_id": "<6a746675.c56c62da.2f7738.5509@mx.google.com>"
     }
   ]
 }
